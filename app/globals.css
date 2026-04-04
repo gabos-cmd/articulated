@@ -1,0 +1,98 @@
+@import "tailwindcss";
+
+:root {
+  --font-body:
+    "Avenir Next", "Segoe UI", "Helvetica Neue", Helvetica, sans-serif;
+  --font-display:
+    "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Georgia, serif;
+  --background: #f4efe7;
+  --background-strong: #e8dfd2;
+  --surface: rgba(255, 251, 245, 0.76);
+  --surface-strong: rgba(255, 251, 245, 0.92);
+  --foreground: #171411;
+  --muted: #665d55;
+  --line: rgba(42, 31, 20, 0.12);
+  --accent: #83583b;
+  --accent-soft: rgba(131, 88, 59, 0.12);
+  --shadow: 0 28px 80px rgba(41, 28, 18, 0.12);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-background-strong: var(--background-strong);
+  --color-surface: var(--surface);
+  --color-surface-strong: var(--surface-strong);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-accent: var(--accent);
+  --color-accent-soft: var(--accent-soft);
+  --font-sans: var(--font-body);
+  --font-display: var(--font-display);
+}
+
+body {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top left, rgba(255, 255, 255, 0.85), transparent 32%),
+    radial-gradient(circle at bottom right, rgba(210, 184, 154, 0.22), transparent 28%),
+    linear-gradient(180deg, #fbf8f3 0%, #f4efe7 100%);
+  color: var(--foreground);
+  font-family: var(--font-body), sans-serif;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: rgba(131, 88, 59, 0.18);
+}
+
+.museum-shell {
+  position: relative;
+}
+
+.museum-shell::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.28) 0%,
+    transparent 24%,
+    transparent 76%,
+    rgba(97, 71, 45, 0.06) 100%
+  );
+}
+
+.card-shadow {
+  box-shadow: var(--shadow);
+}
+
+.editorial-rule {
+  background: linear-gradient(90deg, transparent 0%, var(--line) 16%, var(--line) 84%, transparent 100%);
+}
+
+.loading-shimmer {
+  position: relative;
+  overflow: hidden;
+}
+
+.loading-shimmer::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  transform: translateX(-100%);
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.48) 50%,
+    transparent 100%
+  );
+  animation: shimmer 1.4s infinite;
+}
+
+@keyframes shimmer {
+  100% {
+    transform: translateX(100%);
+  }
+}
