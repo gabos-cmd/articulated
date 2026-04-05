@@ -82,46 +82,49 @@ export function FavoritesClient() {
                 className="group relative overflow-hidden rounded-[1.9rem] border border-line bg-white shadow-[0_20px_55px_rgba(17,17,17,0.06)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_28px_70px_rgba(17,17,17,0.1)]"
               >
                 {artwork.imageUrl ? (
-                  <div className="pointer-events-none absolute inset-0">
-                    <Image
-                      fill
-                      unoptimized
-                      alt=""
-                      aria-hidden="true"
-                      className="scale-110 object-cover opacity-10 blur-[80px]"
-                      sizes="33vw"
-                      src={artwork.imageUrl}
-                    />
-                  </div>
-                ) : null}
-                <div className="relative p-5">
-                  <div className="rounded-[1.4rem] border border-black/6 bg-[#f8f8f7] p-4">
-                    <div className="relative h-[22rem]">
-                      {artwork.imageUrl ? (
-                        <Image
-                          fill
-                          unoptimized
-                          alt={artwork.imageAlt}
-                          className="object-contain transition duration-500 group-hover:scale-[1.02]"
-                          sizes="(max-width: 1280px) 50vw, 33vw"
-                          src={artwork.imageUrl}
-                        />
-                      ) : null}
+                  <div className="relative min-h-[23rem] overflow-hidden bg-[#f7f7f4]">
+                    <div className="absolute inset-0">
+                      <Image
+                        fill
+                        unoptimized
+                        alt=""
+                        aria-hidden="true"
+                        className="scale-110 object-cover opacity-[0.16] blur-[70px] saturate-[0.9]"
+                        sizes="33vw"
+                        src={artwork.imageUrl}
+                      />
+                      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.28),transparent_52%),linear-gradient(180deg,rgba(255,255,255,0.05),rgba(255,255,255,0.32))]" />
+                    </div>
+                    <div className="relative min-h-[23rem]">
+                      <Image
+                        fill
+                        unoptimized
+                        alt={artwork.imageAlt}
+                        className="object-contain transition duration-500 group-hover:scale-[1.02]"
+                        sizes="(max-width: 1280px) 50vw, 33vw"
+                        src={artwork.imageUrl}
+                      />
                     </div>
                   </div>
-                  <div className="mt-5">
-                    <h2 className="font-display text-[2rem] leading-[0.98] tracking-[-0.025em] text-foreground">
-                      {artwork.title}
-                    </h2>
-                    <p className="mt-3 text-sm leading-7 text-black/68">
-                      <span className="text-foreground">{artwork.artist}</span>
-                      <span className="mx-2 text-black/25">&middot;</span>
-                      {artwork.date}
-                    </p>
-                    <p className="mt-4 text-[14px] leading-7 text-muted">
-                      {artwork.movement ?? artwork.medium}
+                ) : (
+                  <div className="flex min-h-[23rem] items-center justify-center bg-[linear-gradient(180deg,rgba(248,248,246,0.98),rgba(241,241,239,0.88))] px-6 text-center">
+                    <p className="max-w-xs text-sm leading-7 text-muted">
+                      Image unavailable for this saved artwork.
                     </p>
                   </div>
+                )}
+                <div className="relative px-5 pb-6 pt-5">
+                  <h2 className="font-display text-[2rem] leading-[0.98] tracking-[-0.025em] text-foreground">
+                    {artwork.title}
+                  </h2>
+                  <p className="mt-3 text-sm leading-7 text-black/68">
+                    <span className="text-foreground">{artwork.artist}</span>
+                    <span className="mx-2 text-black/25">&middot;</span>
+                    {artwork.date}
+                  </p>
+                  <p className="mt-4 text-[14px] leading-7 text-muted">
+                    {artwork.movement ?? artwork.medium}
+                  </p>
                 </div>
               </article>
             ))}

@@ -37,9 +37,10 @@ export function SiteNav({ variant = "page" }: SiteNavProps) {
       >
         <Image
           alt="Articulated"
-          className="h-auto w-[150px] sm:w-[178px]"
+          className="h-auto w-[148px] sm:w-[174px]"
           height={394}
           priority={isOverlay}
+          sizes="(max-width: 640px) 148px, 174px"
           src="/logo.png"
           width={1511}
         />

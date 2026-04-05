@@ -14,7 +14,23 @@ export default function Loading() {
           </div>
         </div>
         <div className="mx-auto mt-8 max-w-[1380px]">
-          <div className="loading-shimmer min-h-[calc(100vh-6rem)] rounded-[2.2rem] bg-[linear-gradient(180deg,rgba(0,0,0,0.03),rgba(0,0,0,0.015))]" />
+          <div className="flex min-h-[calc(100vh-6rem)] items-center justify-center">
+            <div className="w-full max-w-[1180px] overflow-hidden rounded-[2.35rem] border border-black/8 bg-white/75 shadow-[0_34px_110px_rgba(17,17,17,0.08)]">
+              <div className="loading-shimmer min-h-[58vh] bg-[linear-gradient(180deg,rgba(0,0,0,0.035),rgba(0,0,0,0.015))] sm:min-h-[66vh] lg:min-h-[72vh]" />
+              <div className="px-6 pb-7 pt-6 text-center sm:px-10 sm:pb-9 sm:pt-7 lg:px-14 lg:pb-10">
+                <div className="loading-shimmer mx-auto h-14 w-full max-w-3xl rounded-full bg-black/[0.04]" />
+                <div className="loading-shimmer mx-auto mt-4 h-6 w-64 rounded-full bg-black/[0.04]" />
+                <div className="loading-shimmer mx-auto mt-5 h-5 w-full max-w-2xl rounded-full bg-black/[0.03]" />
+                <div className="loading-shimmer mx-auto mt-3 h-5 w-10/12 max-w-xl rounded-full bg-black/[0.03]" />
+                <div className="mt-6 flex flex-wrap items-center justify-center gap-4">
+                  <div className="loading-shimmer h-12 w-32 rounded-[1rem] bg-black/[0.03]" />
+                  <div className="loading-shimmer h-12 w-32 rounded-[1rem] bg-black/[0.03]" />
+                  <div className="loading-shimmer h-12 w-32 rounded-[1rem] bg-black/[0.03]" />
+                </div>
+                <div className="loading-shimmer mx-auto mt-7 h-12 w-48 rounded-full bg-black/[0.04]" />
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
