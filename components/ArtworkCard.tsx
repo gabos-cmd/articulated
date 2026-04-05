@@ -47,9 +47,9 @@ export function ArtworkCard({
                 Image currently unavailable
               </span>
               <p className="max-w-md text-sm leading-7 text-muted">
-                The museum record is still worth exploring, so the educational
-                notes and metadata remain available even when the image is
-                missing.
+                The artwork profile is still worth exploring, so the educational
+                notes and metadata remain available even if the image does not
+                load.
               </p>
             </div>
           ) : (
@@ -110,8 +110,7 @@ export function ArtworkCard({
                 Looking prompt
               </p>
               <p className="mt-3 text-sm leading-7 text-foreground/82">
-                Start with one detail that catches your eye, then ask what the
-                artist wanted you to notice first.
+                {artwork.lookingPrompt}
               </p>
             </div>
           </div>

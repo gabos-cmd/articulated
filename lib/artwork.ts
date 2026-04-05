@@ -17,8 +17,9 @@ export type Artwork = {
   whyItMatters: string;
   aboutArtist: string;
   historicalContext: string;
+  lookingPrompt: string;
   yearMoments: YearMoment[];
-  source: "mock" | "api";
+  source: "mock" | "api" | "curated";
   sourceLabel: string;
 };
 
