@@ -2,19 +2,20 @@
 
 :root {
   --font-body:
-    "Avenir Next", "Segoe UI", "Helvetica Neue", Helvetica, sans-serif;
+    "Avenir Next", "Helvetica Neue", Helvetica, "Segoe UI", sans-serif;
   --font-display:
-    "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Georgia, serif;
-  --background: #f4efe7;
-  --background-strong: #e8dfd2;
-  --surface: rgba(255, 251, 245, 0.76);
-  --surface-strong: rgba(255, 251, 245, 0.92);
-  --foreground: #171411;
-  --muted: #665d55;
-  --line: rgba(42, 31, 20, 0.12);
-  --accent: #83583b;
-  --accent-soft: rgba(131, 88, 59, 0.12);
-  --shadow: 0 28px 80px rgba(41, 28, 18, 0.12);
+    "Iowan Old Style", "Baskerville", "Palatino Linotype", Georgia, serif;
+  --background: #ffffff;
+  --background-strong: #f5f5f4;
+  --surface: rgba(255, 255, 255, 0.8);
+  --surface-strong: rgba(249, 249, 248, 0.9);
+  --foreground: #111111;
+  --muted: #666666;
+  --line: rgba(17, 17, 17, 0.09);
+  --accent: #111111;
+  --accent-soft: rgba(17, 17, 17, 0.04);
+  --shadow: 0 18px 50px rgba(17, 17, 17, 0.06);
+  --hero-shadow: 0 40px 90px rgba(17, 17, 17, 0.1);
 }
 
 @theme inline {
@@ -33,43 +34,39 @@
 
 body {
   min-height: 100vh;
-  background:
-    radial-gradient(circle at top left, rgba(255, 255, 255, 0.85), transparent 32%),
-    radial-gradient(circle at bottom right, rgba(210, 184, 154, 0.22), transparent 28%),
-    linear-gradient(180deg, #fbf8f3 0%, #f4efe7 100%);
+  background: #ffffff;
   color: var(--foreground);
   font-family: var(--font-body), sans-serif;
+  letter-spacing: -0.01em;
   text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
 }
 
 ::selection {
-  background: rgba(131, 88, 59, 0.18);
+  background: rgba(17, 17, 17, 0.08);
 }
 
 .museum-shell {
   position: relative;
-}
-
-.museum-shell::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  pointer-events: none;
-  background-image: linear-gradient(
-    to bottom,
-    rgba(255, 255, 255, 0.28) 0%,
-    transparent 24%,
-    transparent 76%,
-    rgba(97, 71, 45, 0.06) 100%
-  );
+  isolation: isolate;
 }
 
 .card-shadow {
   box-shadow: var(--shadow);
 }
 
+.hero-shadow {
+  box-shadow: var(--hero-shadow);
+}
+
+.soft-panel {
+  background: rgba(255, 255, 255, 0.84);
+  backdrop-filter: blur(18px);
+  box-shadow: 0 18px 60px rgba(17, 17, 17, 0.08);
+}
+
 .editorial-rule {
-  background: linear-gradient(90deg, transparent 0%, var(--line) 16%, var(--line) 84%, transparent 100%);
+  background: var(--line);
 }
 
 .loading-shimmer {
@@ -85,7 +82,7 @@ body {
   background: linear-gradient(
     90deg,
     transparent 0%,
-    rgba(255, 255, 255, 0.48) 50%,
+    rgba(255, 255, 255, 0.8) 50%,
     transparent 100%
   );
   animation: shimmer 1.4s infinite;

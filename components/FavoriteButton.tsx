@@ -11,10 +11,10 @@ export function FavoriteButton({
 }: FavoriteButtonProps) {
   return (
     <button
-      className={`inline-flex items-center justify-center gap-3 rounded-full border px-5 py-3 text-sm font-semibold transition duration-200 ${
+      className={`inline-flex min-h-12 items-center justify-center gap-3 rounded-full border px-5 py-3.5 text-sm font-medium transition duration-200 ${
         active
-          ? "border-accent bg-accent text-white hover:bg-accent/92"
-          : "border-line bg-white/82 text-foreground hover:bg-white"
+          ? "border-foreground bg-foreground text-white hover:bg-black/88"
+          : "border-line bg-white/75 text-foreground hover:bg-black/[0.03]"
       }`}
       onClick={onClick}
       type="button"
@@ -23,7 +23,7 @@ export function FavoriteButton({
       <span>{active ? "Saved to favorites" : "Save to favorites"}</span>
       <span
         className={`rounded-full px-2 py-0.5 text-xs ${
-          active ? "bg-white/18 text-white" : "bg-accent-soft text-muted"
+          active ? "bg-white/14 text-white" : "bg-black/[0.04] text-muted"
         }`}
       >
         {count}

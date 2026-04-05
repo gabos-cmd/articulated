@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useEffect, useState } from "react";
 
 import { ArtworkCard } from "@/components/ArtworkCard";
@@ -82,50 +83,30 @@ export function ArtworkExperience({
   };
 
   return (
-    <main className="museum-shell min-h-screen px-5 py-8 md:px-10 md:py-10">
-      <div className="mx-auto max-w-6xl">
-        <header className="flex flex-col gap-6 border-b border-line/80 pb-8 md:flex-row md:items-end md:justify-between">
-          <div className="max-w-3xl space-y-5">
-            <span className="inline-flex w-fit items-center rounded-full border border-line bg-white/60 px-4 py-2 text-xs font-semibold uppercase tracking-[0.28em] text-muted">
-              Articulated
-            </span>
-            <div className="space-y-3">
-              <h1 className="font-display text-5xl leading-none text-foreground sm:text-6xl lg:text-7xl">
-                A daily museum moment, designed for slow looking.
-              </h1>
-              <p className="max-w-2xl text-base leading-8 text-muted sm:text-lg">
-                Explore one carefully framed artwork at a time, then connect it
-                to the artist, the period, and the wider world around it.
-              </p>
-            </div>
-          </div>
-          <div className="rounded-[1.75rem] border border-line bg-white/65 p-5 text-sm card-shadow backdrop-blur-sm">
-            <p className="text-xs font-semibold uppercase tracking-[0.28em] text-muted">
-              Saved locally
-            </p>
-            <p className="mt-3 font-display text-4xl text-foreground">
-              {favorites.length}
-            </p>
-            <p className="mt-2 max-w-[14rem] leading-6 text-muted">
-              Favorites stay in your browser, which keeps this MVP simple and
-              easy to explain.
-            </p>
-          </div>
+    <main className="museum-shell min-h-screen px-5 pb-16 pt-8 sm:px-8 lg:px-10">
+      <div className="mx-auto max-w-[1380px]">
+        <header className="flex justify-center pb-12 pt-2 sm:pb-16 sm:pt-6 lg:pb-18">
+          <Image
+            alt="Articulated"
+            className="h-auto w-[220px] sm:w-[290px] lg:w-[360px]"
+            height={394}
+            priority
+            src="/Logo.png"
+            width={1511}
+          />
         </header>
 
-        <section className="mt-8">
-          <ArtworkCard
-            artwork={artwork}
-            errorMessage={errorMessage}
-            isFavorite={isFavorite}
-            isRefreshing={isRefreshing}
-            favoriteCount={favorites.length}
-            onFavoriteToggle={handleFavoriteToggle}
-            onLoadAnother={handleLoadAnother}
-          />
-        </section>
+        <ArtworkCard
+          artwork={artwork}
+          errorMessage={errorMessage}
+          isFavorite={isFavorite}
+          isRefreshing={isRefreshing}
+          favoriteCount={favorites.length}
+          onFavoriteToggle={handleFavoriteToggle}
+          onLoadAnother={handleLoadAnother}
+        />
 
-        <section className="mt-8 grid gap-6 lg:grid-cols-2">
+        <section className="mx-auto mt-20 max-w-5xl">
           <InfoSection
             title="Why this artwork matters"
             description={artwork.whyItMatters}
@@ -134,9 +115,6 @@ export function ArtworkExperience({
             title="About the artist"
             description={artwork.aboutArtist}
           />
-        </section>
-
-        <section className="mt-6 grid gap-6 xl:grid-cols-[1.08fr_0.92fr]">
           <InfoSection
             title="Historical context"
             description={artwork.historicalContext}
@@ -144,6 +122,11 @@ export function ArtworkExperience({
           <YearMomentsCard
             dateLabel={artwork.date}
             moments={artwork.yearMoments}
+          />
+          <InfoSection
+            title="Looking prompt"
+            description={artwork.lookingPrompt}
+            tone="prompt"
           />
         </section>
       </div>

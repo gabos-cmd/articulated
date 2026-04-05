@@ -1,21 +1,34 @@
 type InfoSectionProps = {
   title: string;
   description: string;
+  tone?: "default" | "prompt";
 };
 
 export function InfoSection({
   title,
-  description
+  description,
+  tone = "default"
 }: InfoSectionProps) {
+  const isPrompt = tone === "prompt";
+
   return (
-    <article className="rounded-[1.75rem] border border-line bg-surface-strong p-6 card-shadow backdrop-blur-sm">
-      <p className="text-xs font-semibold uppercase tracking-[0.28em] text-muted">
-        {title}
-      </p>
-      <div className="editorial-rule mt-4 h-px w-full" />
-      <p className="mt-5 text-[15px] leading-8 text-foreground/88 sm:text-base">
-        {description}
-      </p>
-    </article>
+    <section className="grid gap-5 border-t border-line py-10 sm:py-14 md:grid-cols-[220px_minmax(0,1fr)] md:gap-10">
+      <div>
+        <p className="text-[11px] font-medium uppercase tracking-[0.16em] text-muted">
+          {title}
+        </p>
+      </div>
+      <div>
+        <p
+          className={
+            isPrompt
+              ? "max-w-3xl font-display text-[2rem] leading-[1.35] tracking-[-0.02em] text-foreground sm:text-[2.4rem]"
+              : "max-w-3xl text-[16px] leading-8 text-foreground/88 sm:text-[18px]"
+          }
+        >
+          {description}
+        </p>
+      </div>
+    </section>
   );
 }

@@ -32,93 +32,97 @@ export function ArtworkCard({
   }, [artwork.id, artwork.imageUrl]);
 
   return (
-    <article className="relative overflow-hidden rounded-[2rem] border border-line bg-surface-strong p-4 card-shadow backdrop-blur-sm sm:p-5 lg:p-6">
+    <article className="relative">
       <div
-        className={`absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(255,255,255,0.45),transparent_24%)] transition-opacity duration-300 ${
+        className={`pointer-events-none absolute inset-0 rounded-[2rem] bg-[radial-gradient(circle_at_top_right,rgba(17,17,17,0.04),transparent_22%)] transition-opacity duration-300 ${
           isRefreshing ? "opacity-100" : "opacity-0"
         }`}
       />
 
-      <div className="relative grid gap-6 lg:grid-cols-[1.2fr_0.82fr] lg:items-start">
-        <div className="overflow-hidden rounded-[1.6rem] border border-line/80 bg-background-strong">
+      <div className="relative rounded-[2rem] bg-background-strong p-3 hero-shadow sm:p-4 lg:p-6">
+        <div className="group relative overflow-hidden rounded-[1.75rem] bg-[#f6f6f4] min-h-[58vh] sm:min-h-[66vh] lg:min-h-[78vh]">
           {imageUnavailable ? (
-            <div className="flex aspect-[4/5] flex-col items-center justify-center gap-4 px-8 text-center">
-              <span className="font-display text-3xl text-foreground">
+            <div className="flex min-h-[58vh] flex-col items-center justify-center gap-4 px-8 text-center sm:min-h-[66vh] lg:min-h-[78vh]">
+              <span className="font-display text-3xl text-foreground sm:text-4xl">
                 Image currently unavailable
               </span>
-              <p className="max-w-md text-sm leading-7 text-muted">
+              <p className="max-w-md text-sm leading-7 text-muted sm:text-base">
                 The artwork profile is still worth exploring, so the educational
                 notes and metadata remain available even if the image does not
                 load.
               </p>
             </div>
           ) : (
-            <div className="relative aspect-[4/5]">
+            <div className="relative min-h-[58vh] sm:min-h-[66vh] lg:min-h-[78vh]">
               <Image
                 fill
                 priority
                 unoptimized
                 alt={artwork.imageAlt}
-                className="object-cover"
+                className={`object-contain px-4 py-4 transition-transform duration-700 ease-out sm:px-8 sm:py-8 lg:px-12 lg:py-12 ${
+                  isRefreshing ? "scale-[1.01]" : "group-hover:scale-[1.025]"
+                }`}
                 onError={() => setImageUnavailable(true)}
-                sizes="(max-width: 1024px) 100vw, 60vw"
+                sizes="100vw"
                 src={artwork.imageUrl ?? ""}
               />
             </div>
           )}
         </div>
 
-        <div className="flex h-full flex-col justify-between gap-6 rounded-[1.6rem] border border-line/80 bg-white/55 p-5 sm:p-6">
+        <aside className="soft-panel relative mt-6 rounded-[1.75rem] border border-line p-6 sm:p-8 lg:absolute lg:bottom-10 lg:right-10 lg:mt-0 lg:w-[430px]">
           <div className="space-y-5">
-            <div className="flex flex-wrap items-center gap-3">
-              <span className="inline-flex rounded-full border border-line bg-white/80 px-3 py-1 text-xs font-semibold uppercase tracking-[0.24em] text-muted">
+            <div className="flex flex-wrap items-center gap-2 text-[11px] font-medium uppercase tracking-[0.16em] text-muted">
+              <span>
                 {artwork.sourceLabel}
               </span>
               {artwork.movement ? (
-                <span className="inline-flex rounded-full border border-line px-3 py-1 text-xs uppercase tracking-[0.22em] text-muted">
+                <>
+                  <span aria-hidden="true" className="text-black/30">
+                    /
+                  </span>
                   {artwork.movement}
-                </span>
+                </>
               ) : null}
             </div>
 
             <div>
-              <p className="text-sm uppercase tracking-[0.3em] text-muted">
-                Featured artwork
-              </p>
-              <h2 className="mt-3 font-display text-4xl leading-tight text-foreground sm:text-5xl">
+              <h2 className="font-display text-[2.55rem] leading-[0.95] tracking-[-0.02em] text-foreground sm:text-[3.1rem]">
                 {artwork.title}
               </h2>
-              <p className="mt-4 text-lg text-muted">
-                {artwork.artist}{" "}
-                <span className="text-foreground/60">&middot;</span>{" "}
+              <p className="mt-4 text-base leading-7 text-muted sm:text-lg">
+                <span className="text-foreground">{artwork.artist}</span>
+                <span className="mx-2 text-black/25">&middot;</span>
                 {artwork.date}
               </p>
             </div>
 
-            <div className="grid gap-3 sm:grid-cols-2">
-              <MetadataTile label="Artist" value={artwork.artist} />
-              <MetadataTile label="Date" value={artwork.date} />
-              <MetadataTile label="Medium" value={artwork.medium} />
-              <MetadataTile
-                label="Place of origin"
-                value={artwork.location ?? "Not listed in the museum record"}
+            <dl className="grid gap-x-6 gap-y-5 border-y border-line py-6 sm:grid-cols-2">
+              <MetadataItem label="Artist" value={artwork.artist} />
+              <MetadataItem label="Year" value={artwork.date} />
+              <MetadataItem label="Medium" value={artwork.medium} />
+              <MetadataItem
+                label={artwork.movement ? "Movement" : "Origin"}
+                value={
+                  artwork.movement ??
+                  artwork.location ??
+                  "Not listed in the artwork record"
+                }
               />
-            </div>
+            </dl>
 
-            <div className="rounded-[1.35rem] border border-line bg-accent-soft px-4 py-4">
-              <p className="text-xs font-semibold uppercase tracking-[0.25em] text-muted">
-                Looking prompt
+            {artwork.location ? (
+              <p className="text-sm leading-7 text-muted">
+                Painted in or associated with{" "}
+                <span className="text-foreground">{artwork.location}</span>.
               </p>
-              <p className="mt-3 text-sm leading-7 text-foreground/82">
-                {artwork.lookingPrompt}
-              </p>
-            </div>
+            ) : null}
           </div>
 
           <div className="space-y-4">
             <div className="flex flex-col gap-3 sm:flex-row">
               <button
-                className="inline-flex items-center justify-center rounded-full bg-foreground px-5 py-3 text-sm font-semibold text-white transition duration-200 hover:bg-foreground/90 disabled:cursor-wait disabled:bg-foreground/70"
+                className="inline-flex min-h-12 items-center justify-center rounded-full bg-foreground px-5 py-3.5 text-sm font-medium text-white transition duration-200 hover:bg-black/88 disabled:cursor-wait disabled:bg-black/60"
                 disabled={isRefreshing}
                 onClick={onLoadAnother}
                 type="button"
@@ -131,17 +135,20 @@ export function ArtworkCard({
                 onClick={onFavoriteToggle}
               />
             </div>
+            <p className="text-sm leading-6 text-muted">
+              Saved locally: <span className="text-foreground">{favoriteCount}</span>
+            </p>
             <p className="min-h-6 text-sm leading-6 text-muted">
               {errorMessage}
             </p>
           </div>
-        </div>
+        </aside>
       </div>
     </article>
   );
 }
 
-function MetadataTile({
+function MetadataItem({
   label,
   value
 }: {
@@ -149,11 +156,11 @@ function MetadataTile({
   value: string;
 }) {
   return (
-    <div className="rounded-[1.2rem] border border-line bg-white/70 px-4 py-4">
-      <p className="text-xs font-semibold uppercase tracking-[0.24em] text-muted">
+    <div>
+      <dt className="text-[11px] font-medium uppercase tracking-[0.16em] text-muted">
         {label}
-      </p>
-      <p className="mt-3 text-sm leading-7 text-foreground">{value}</p>
+      </dt>
+      <dd className="mt-2 text-sm leading-7 text-foreground">{value}</dd>
     </div>
   );
 }

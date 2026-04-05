@@ -5,7 +5,12 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Articulated",
   description:
-    "Articulated is a refined museum-style web app that highlights one artwork at a time with accessible, engaging context."
+    "Articulated is a refined museum-style web app that highlights one artwork at a time with accessible, engaging context.",
+  icons: {
+    icon: "/Brandmark.png",
+    shortcut: "/Brandmark.png",
+    apple: "/Brandmark.png"
+  }
 };
 
 export default function RootLayout({

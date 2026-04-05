@@ -10,35 +10,34 @@ export function YearMomentsCard({
   moments
 }: YearMomentsCardProps) {
   return (
-    <article className="rounded-[1.75rem] border border-line bg-surface-strong p-6 card-shadow backdrop-blur-sm">
-      <p className="text-xs font-semibold uppercase tracking-[0.28em] text-muted">
-        What else was happening that year?
-      </p>
-      <div className="editorial-rule mt-4 h-px w-full" />
-      <p className="mt-5 text-sm leading-7 text-muted">
-        A quick timeline view for <span className="text-foreground">{dateLabel}</span>.
-      </p>
+    <section className="grid gap-5 border-t border-line py-10 sm:py-14 md:grid-cols-[220px_minmax(0,1fr)] md:gap-10">
+      <div>
+        <p className="text-[11px] font-medium uppercase tracking-[0.16em] text-muted">
+          What else was happening that year?
+        </p>
+      </div>
+      <div>
+        <p className="max-w-3xl text-[15px] leading-7 text-muted sm:text-base">
+          A historical snapshot around{" "}
+          <span className="text-foreground">{dateLabel}</span>.
+        </p>
 
-      <div className="mt-6 space-y-5">
-        {moments.map((moment, index) => (
-          <div key={`${moment.label}-${index}`} className="flex gap-4">
-            <div className="flex flex-col items-center pt-1">
-              <span className="size-3 rounded-full bg-accent" />
-              {index < moments.length - 1 ? (
-                <span className="mt-2 h-full w-px bg-line" />
-              ) : null}
-            </div>
-            <div className="rounded-[1.2rem] border border-line bg-white/70 px-4 py-4">
-              <p className="text-xs font-semibold uppercase tracking-[0.24em] text-muted">
+        <div className="mt-8 grid gap-8 lg:grid-cols-3">
+          {moments.map((moment, index) => (
+            <article
+              key={`${moment.label}-${index}`}
+              className="border-t border-line pt-5"
+            >
+              <p className="text-[11px] font-medium uppercase tracking-[0.16em] text-muted">
                 {moment.label}
               </p>
-              <p className="mt-2 text-sm leading-7 text-foreground/88">
+              <p className="mt-3 text-sm leading-7 text-foreground/86">
                 {moment.text}
               </p>
-            </div>
-          </div>
-        ))}
+            </article>
+          ))}
+        </div>
       </div>
-    </article>
+    </section>
   );
 }
