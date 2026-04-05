@@ -35,10 +35,10 @@ export function FavoritesClient() {
           <div className="pointer-events-none absolute -left-12 top-8 h-48 w-48 rounded-full bg-black/[0.03] blur-[90px]" />
           <div className="pointer-events-none absolute right-0 top-0 h-56 w-56 rounded-full bg-white blur-[120px]" />
           <div className="relative max-w-2xl">
-            <p className="text-[11px] font-medium uppercase tracking-[0.16em] text-muted">
+            <p className="font-heading text-[11px] font-medium uppercase tracking-[0.12em] text-muted">
               Favorites
             </p>
-            <h1 className="mt-4 font-display text-[2.9rem] leading-[0.94] tracking-[-0.03em] text-foreground sm:text-[4rem]">
+            <h1 className="mt-4 font-heading text-[2.9rem] font-[500] leading-[0.94] tracking-[-0.05em] text-foreground sm:text-[4rem]">
               Your saved artworks,
               <br />
               kept locally.
@@ -61,7 +61,7 @@ export function FavoritesClient() {
           </section>
         ) : favorites.length === 0 ? (
           <section className="mt-12 rounded-[1.8rem] border border-line bg-white px-6 py-12 text-center shadow-[0_18px_40px_rgba(17,17,17,0.04)]">
-            <h2 className="font-display text-[2rem] tracking-[-0.02em] text-foreground">
+            <h2 className="font-heading text-[2rem] font-[500] tracking-[-0.045em] text-foreground">
               No saved artworks yet.
             </h2>
             <p className="mx-auto mt-4 max-w-lg text-[16px] leading-8 text-muted">
@@ -115,7 +115,7 @@ export function FavoritesClient() {
                   </div>
                 )}
                 <div className="relative px-5 pb-6 pt-5">
-                  <h2 className="font-display text-[2rem] leading-[0.98] tracking-[-0.025em] text-foreground">
+                  <h2 className="font-heading text-[2rem] font-[500] leading-[0.98] tracking-[-0.045em] text-foreground">
                     {artwork.title}
                   </h2>
                   <p className="mt-3 text-sm leading-7 text-black/68">

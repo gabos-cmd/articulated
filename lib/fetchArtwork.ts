@@ -33,9 +33,23 @@ export async function getFeaturedArtwork(excludeId?: string): Promise<Artwork> {
       : curatedPaintings;
 
   const selectedPainting =
-    pool[Math.floor(Math.random() * pool.length)] ?? curatedPaintings[0];
+    pool[getArtworkIndexForUtcDay(pool.length)] ?? curatedPaintings[0];
 
   return hydratePainting(selectedPainting);
+}
+
+function getArtworkIndexForUtcDay(poolLength: number) {
+  if (poolLength <= 1) {
+    return 0;
+  }
+
+  const now = new Date();
+  const utcDayNumber = Math.floor(
+    Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate()) /
+      86_400_000
+  );
+
+  return utcDayNumber % poolLength;
 }
 
 async function hydratePainting(

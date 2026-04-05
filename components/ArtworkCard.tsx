@@ -64,7 +64,7 @@ export function ArtworkCard({
                     priority
                     unoptimized
                     alt={artwork.imageAlt}
-                    className="object-contain transition-transform duration-700 ease-out group-hover:scale-[1.02]"
+                    className="object-cover transition-transform duration-700 ease-out group-hover:scale-[1.02]"
                     onError={() => setImageUnavailable(true)}
                     sizes="(max-width: 1280px) 100vw, 78vw"
                     src={artwork.imageUrl ?? ""}
