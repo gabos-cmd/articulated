@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -35,12 +34,10 @@ export function SiteNav({ variant = "page" }: SiteNavProps) {
         className="inline-flex items-center transition duration-200 hover:opacity-75"
         href="/"
       >
-        <Image
+        <img
           alt="Articulated"
-          className="h-auto w-[148px] sm:w-[174px]"
+          className="block h-auto w-[148px] sm:w-[174px]"
           height={394}
-          priority={isOverlay}
-          sizes="(max-width: 640px) 148px, 174px"
           src="/logo.png"
           width={1511}
         />

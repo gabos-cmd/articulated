@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 
 import { ArtworkCard } from "@/components/ArtworkCard";
+import { FooterSignature } from "@/components/FooterSignature";
 import { InfoSection } from "@/components/InfoSection";
 import { SiteNav } from "@/components/SiteNav";
 import { YearMomentsCard } from "@/components/YearMomentsCard";
@@ -93,6 +94,8 @@ export function ArtworkExperience({
             description={artwork.lookingPrompt}
             tone="prompt"
           />
+
+          <FooterSignature className="pt-16" />
         </div>
       </section>
     </main>

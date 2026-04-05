@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
+import { FooterSignature } from "@/components/FooterSignature";
 import { SiteNav } from "@/components/SiteNav";
 import { FAVORITES_STORAGE_KEY, type Artwork } from "@/lib/artwork";
 
@@ -100,7 +101,7 @@ export function FavoritesClient() {
                         fill
                         unoptimized
                         alt={artwork.imageAlt}
-                        className="object-contain transition duration-500 group-hover:scale-[1.02]"
+                        className="object-cover transition duration-500 group-hover:scale-[1.04]"
                         sizes="(max-width: 1280px) 50vw, 33vw"
                         src={artwork.imageUrl}
                       />
@@ -130,6 +131,8 @@ export function FavoritesClient() {
             ))}
           </section>
         )}
+
+        <FooterSignature className="mt-16" />
       </div>
     </main>
   );
