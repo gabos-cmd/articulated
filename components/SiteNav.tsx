@@ -36,7 +36,7 @@ export function SiteNav({ variant = "page" }: SiteNavProps) {
       >
         <img
           alt="Articulated"
-          className="block h-auto w-[148px] sm:w-[174px]"
+          className="block h-auto w-[134px] sm:w-[158px]"
           height={394}
           src="/Logo.png"
           width={1511}

@@ -12,7 +12,7 @@ export function YearMomentsCard({
   return (
     <section className="grid gap-5 border-t border-line py-14 sm:py-18 md:grid-cols-[220px_minmax(0,1fr)] md:gap-10">
       <div>
-        <p className="text-[11px] font-medium uppercase tracking-[0.16em] text-muted">
+        <p className="font-heading text-[11px] font-medium uppercase tracking-[0.12em] text-muted">
           What else was happening that year?
         </p>
       </div>
@@ -28,7 +28,7 @@ export function YearMomentsCard({
               key={`${moment.label}-${index}`}
               className="border-t border-line pt-5"
             >
-              <p className="text-[11px] font-medium uppercase tracking-[0.16em] text-muted">
+              <p className="font-heading text-[11px] font-medium uppercase tracking-[0.12em] text-muted">
                 {moment.label}
               </p>
               <p className="mt-3 text-sm leading-7 text-foreground/86">

@@ -6,6 +6,7 @@ export type CuratedPaintingSeed = {
   artistWikipediaTitle: string;
   title: string;
   artist: string;
+  artistQuote?: string;
   date: string;
   year: number;
   medium: string;
@@ -26,6 +27,7 @@ export const curatedPaintings: CuratedPaintingSeed[] = [
     artistWikipediaTitle: "Vincent van Gogh",
     title: "The Starry Night",
     artist: "Vincent van Gogh",
+    artistQuote: "What is done in love is done well.",
     date: "1889",
     year: 1889,
     medium: "Oil on canvas",
@@ -170,6 +172,7 @@ export const curatedPaintings: CuratedPaintingSeed[] = [
     artistWikipediaTitle: "Claude Monet",
     title: "Impression, Sunrise",
     artist: "Claude Monet",
+    artistQuote: "Color is my day-long obsession, joy and torment.",
     date: "1872",
     year: 1872,
     medium: "Oil on canvas",
@@ -242,6 +245,7 @@ export const curatedPaintings: CuratedPaintingSeed[] = [
     artistWikipediaTitle: "Rembrandt",
     title: "The Night Watch",
     artist: "Rembrandt",
+    artistQuote: "Choose only one master: Nature.",
     date: "1642",
     year: 1642,
     medium: "Oil on canvas",

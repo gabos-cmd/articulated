@@ -50,6 +50,7 @@ async function hydratePainting(
     id: painting.id,
     title: paintingPage?.title?.trim() || painting.title,
     artist: painting.artist,
+    artistQuote: painting.artistQuote ?? null,
     date: painting.date,
     year: painting.year,
     medium: painting.medium,

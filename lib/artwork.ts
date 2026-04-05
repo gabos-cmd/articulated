@@ -7,6 +7,7 @@ export type Artwork = {
   id: string;
   title: string;
   artist: string;
+  artistQuote?: string | null;
   date: string;
   year: number | null;
   medium: string;

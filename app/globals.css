@@ -1,8 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
 @import "tailwindcss";
 
 :root {
   --font-body:
     "Avenir Next", "Helvetica Neue", Helvetica, "Segoe UI", sans-serif;
+  --font-heading:
+    "Inter", "Avenir Next", "Helvetica Neue", Helvetica, "Segoe UI", sans-serif;
   --font-display:
     "Iowan Old Style", "Baskerville", "Palatino Linotype", Georgia, serif;
   --background: #ffffff;
@@ -29,6 +32,7 @@
   --color-accent: var(--accent);
   --color-accent-soft: var(--accent-soft);
   --font-sans: var(--font-body);
+  --font-heading: var(--font-heading);
   --font-display: var(--font-display);
 }
 

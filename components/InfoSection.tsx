@@ -14,7 +14,7 @@ export function InfoSection({
   return (
     <section className="grid gap-5 border-t border-line py-14 sm:py-18 md:grid-cols-[220px_minmax(0,1fr)] md:gap-10">
       <div>
-        <p className="text-[11px] font-medium uppercase tracking-[0.16em] text-muted">
+        <p className="font-heading text-[11px] font-medium uppercase tracking-[0.12em] text-muted">
           {title}
         </p>
       </div>
@@ -22,7 +22,7 @@ export function InfoSection({
         <p
           className={
             isPrompt
-              ? "max-w-3xl font-display text-[1.8rem] leading-[1.36] tracking-[-0.02em] text-foreground sm:text-[2.25rem]"
+              ? "max-w-3xl font-heading text-[1.8rem] font-[500] leading-[1.28] tracking-[-0.045em] text-foreground sm:text-[2.2rem]"
               : "max-w-3xl text-[16px] leading-8 text-foreground/88 sm:text-[17px]"
           }
         >
