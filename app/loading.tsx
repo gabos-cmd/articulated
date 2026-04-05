@@ -5,7 +5,7 @@ export default function Loading() {
         <div className="mx-auto max-w-[1380px]">
           <div className="rounded-[1.75rem] border border-white/45 bg-white/[0.2] px-5 py-4 shadow-[0_18px_55px_rgba(17,17,17,0.09)] backdrop-blur-[18px]">
             <div className="flex items-center justify-between">
-              <div className="loading-shimmer h-8 w-36 rounded-full bg-black/5" />
+              <div className="loading-shimmer h-10 w-40 rounded-full bg-black/5" />
               <div className="flex gap-3">
                 <div className="loading-shimmer h-9 w-24 rounded-full bg-black/5" />
                 <div className="loading-shimmer h-9 w-20 rounded-full bg-black/5" />

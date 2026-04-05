@@ -13,8 +13,8 @@ export function FavoriteButton({
     <button
       className={`inline-flex min-h-11 items-center justify-center gap-2.5 rounded-full border px-5 py-3 text-sm font-medium backdrop-blur-md transition duration-200 ${
         active
-          ? "border-black/70 bg-black text-white shadow-[0_18px_40px_rgba(17,17,17,0.2)] hover:bg-black/88"
-          : "border-white/70 bg-white/60 text-foreground shadow-[0_12px_35px_rgba(17,17,17,0.08)] hover:bg-white/78"
+          ? "border-black/70 bg-black text-white shadow-[0_16px_36px_rgba(17,17,17,0.18)] hover:bg-black/88"
+          : "border-white/80 bg-white/66 text-foreground shadow-[0_12px_32px_rgba(17,17,17,0.08)] hover:bg-white/82"
       }`}
       onClick={onClick}
       type="button"

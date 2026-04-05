@@ -28,7 +28,7 @@ export function ArtworkCard({
   const heroDescription = getHeroDescription(artwork.whyItMatters);
 
   return (
-    <article className="relative mx-auto mt-8 max-w-[1380px] sm:mt-10">
+    <article className="relative mx-auto mt-8 max-w-[1280px] sm:mt-10">
       {artwork.imageUrl ? (
         <div className="pointer-events-none absolute inset-0 overflow-hidden rounded-[2.25rem]">
           <Image
@@ -49,11 +49,11 @@ export function ArtworkCard({
       <div className="pointer-events-none absolute bottom-12 left-1/2 h-48 w-72 -translate-x-1/2 rounded-full bg-white/60 blur-[120px]" />
 
       <section className="relative flex min-h-[calc(100vh-6rem)] items-center justify-center">
-        <div className="group relative w-full max-w-[1080px] rounded-[2.1rem] border border-white/55 bg-white/[0.34] p-4 shadow-[0_45px_120px_rgba(17,17,17,0.18)] backdrop-blur-[26px] transition duration-500 ease-out hover:-translate-y-1 hover:shadow-[0_55px_140px_rgba(17,17,17,0.2)] sm:p-6 lg:p-7">
-          <div className="absolute inset-x-8 top-0 h-px bg-gradient-to-r from-transparent via-white/80 to-transparent" />
-          <div className="grid gap-6 lg:grid-cols-[minmax(0,1.02fr)_340px] lg:items-center">
+        <div className="group relative w-full max-w-[1160px] rounded-[2.25rem] border border-white/60 bg-white/[0.42] p-4 shadow-[0_38px_110px_rgba(17,17,17,0.16)] backdrop-blur-[26px] transition duration-500 ease-out hover:-translate-y-1 hover:shadow-[0_52px_135px_rgba(17,17,17,0.19)] sm:p-5 lg:p-6">
+          <div className="absolute inset-x-8 top-0 h-px bg-gradient-to-r from-transparent via-white/85 to-transparent" />
+          <div className="overflow-hidden rounded-[1.85rem] border border-white/55 bg-white/[0.56] shadow-[inset_0_1px_0_rgba(255,255,255,0.8),0_18px_45px_rgba(17,17,17,0.08)]">
             {imageUnavailable ? (
-              <div className="flex min-h-[56vh] w-full flex-col items-center justify-center rounded-[1.65rem] border border-white/45 bg-white/[0.5] px-8 text-center shadow-[inset_0_1px_0_rgba(255,255,255,0.7)] sm:min-h-[62vh] lg:min-h-[68vh]">
+              <div className="flex min-h-[57vh] w-full flex-col items-center justify-center px-8 text-center sm:min-h-[64vh] lg:min-h-[70vh]">
                 <span className="font-display text-3xl text-foreground sm:text-4xl">
                   Image currently unavailable
                 </span>
@@ -64,8 +64,8 @@ export function ArtworkCard({
                 </p>
               </div>
             ) : (
-              <div className="rounded-[1.7rem] border border-white/50 bg-white/[0.58] p-4 shadow-[inset_0_1px_0_rgba(255,255,255,0.75),0_18px_45px_rgba(17,17,17,0.08)] sm:p-5 lg:p-6">
-                <div className="relative min-h-[56vh] sm:min-h-[62vh] lg:min-h-[68vh]">
+              <div className="px-5 pt-5 sm:px-6 sm:pt-6 lg:px-8 lg:pt-8">
+                <div className="relative min-h-[57vh] sm:min-h-[64vh] lg:min-h-[70vh]">
                   <Image
                     fill
                     priority
@@ -80,44 +80,42 @@ export function ArtworkCard({
               </div>
             )}
 
-            <div className="flex h-full flex-col justify-between rounded-[1.7rem] border border-white/40 bg-white/[0.18] px-4 py-5 shadow-[inset_0_1px_0_rgba(255,255,255,0.45)] sm:px-5 sm:py-6">
-              <div>
-                <div className="flex flex-wrap items-center gap-2 text-[11px] font-medium uppercase tracking-[0.15em] text-black/55">
-                  <span>Featured painting</span>
-                  {artwork.movement ? (
-                    <>
-                      <span aria-hidden="true" className="text-black/25">
-                        /
-                      </span>
-                      <span>{artwork.movement}</span>
-                    </>
-                  ) : null}
-                </div>
-
-                <h1 className="mt-5 font-display text-[2.45rem] leading-[0.95] tracking-[-0.03em] text-foreground sm:text-[3rem] lg:text-[3.4rem]">
-                  {artwork.title}
-                </h1>
-                <p className="mt-4 text-base leading-7 text-black/66">
-                  <span className="text-foreground">{artwork.artist}</span>
-                  <span className="mx-2 text-black/25">&middot;</span>
-                  {artwork.date}
-                </p>
-                <p className="mt-6 max-w-[26rem] text-[15px] leading-7 text-black/72">
-                  {heroDescription}
-                </p>
-
-                <dl className="mt-8 space-y-4 border-t border-black/8 pt-5">
-                  <MetadataItem label="Medium" value={artwork.medium} />
-                  {artwork.movement ? (
-                    <MetadataItem label="Movement" value={artwork.movement} />
-                  ) : null}
-                  {artwork.location ? (
-                    <MetadataItem label="Origin" value={artwork.location} />
-                  ) : null}
-                </dl>
+            <div className="px-5 pb-6 pt-5 text-center sm:px-8 sm:pb-8 sm:pt-6 lg:px-12 lg:pb-10">
+              <div className="flex flex-wrap items-center justify-center gap-2 text-[11px] font-medium uppercase tracking-[0.14em] text-black/52">
+                <span>Featured painting</span>
+                {artwork.movement ? (
+                  <>
+                    <span aria-hidden="true" className="text-black/24">
+                      /
+                    </span>
+                    <span>{artwork.movement}</span>
+                  </>
+                ) : null}
               </div>
 
-              <div className="mt-8">
+              <h1 className="mx-auto mt-4 max-w-4xl font-display text-[2.8rem] leading-[0.94] tracking-[-0.03em] text-foreground sm:text-[3.5rem] lg:text-[4rem]">
+                {artwork.title}
+              </h1>
+              <p className="mt-3 text-[15px] leading-7 text-black/66 sm:text-base">
+                <span className="text-foreground">{artwork.artist}</span>
+                <span className="mx-2 text-black/22">&middot;</span>
+                {artwork.date}
+              </p>
+              <p className="mx-auto mt-5 max-w-2xl text-[15px] leading-7 text-black/72 sm:text-base">
+                {heroDescription}
+              </p>
+
+              <dl className="mx-auto mt-7 flex max-w-3xl flex-wrap items-start justify-center gap-x-8 gap-y-4 text-left">
+                <MetadataItem label="Medium" value={artwork.medium} />
+                {artwork.movement ? (
+                  <MetadataItem label="Movement" value={artwork.movement} />
+                ) : null}
+                {artwork.location ? (
+                  <MetadataItem label="Origin" value={artwork.location} />
+                ) : null}
+              </dl>
+
+              <div className="mt-7 flex justify-center">
                 <FavoriteButton
                   active={isFavorite}
                   count={favoriteCount}
@@ -146,11 +144,11 @@ function MetadataItem({
   value: string;
 }) {
   return (
-    <div className="flex flex-col gap-1">
+    <div className="min-w-[10rem] flex-1 sm:flex-none">
       <dt className="text-[11px] font-medium uppercase tracking-[0.15em] text-black/42">
         {label}
       </dt>
-      <dd className="text-sm leading-6 text-foreground">{value}</dd>
+      <dd className="mt-1 text-sm leading-6 text-foreground">{value}</dd>
     </div>
   );
 }

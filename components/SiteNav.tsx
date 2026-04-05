@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -25,14 +26,23 @@ export function SiteNav({ variant = "page" }: SiteNavProps) {
   return (
     <header
       className={`relative z-30 flex items-center justify-between ${
-        isOverlay ? "rounded-[1.75rem] border border-white/40 bg-white/[0.16] px-5 py-4 backdrop-blur-[18px] shadow-[0_18px_55px_rgba(17,17,17,0.09)] sm:px-6" : "border-b border-line/80 py-6"
+        isOverlay
+          ? "rounded-[1.75rem] border border-white/40 bg-white/[0.16] px-5 py-4 backdrop-blur-[18px] shadow-[0_18px_55px_rgba(17,17,17,0.09)] sm:px-6"
+          : "border-b border-line/80 py-6"
       }`}
     >
       <Link
-        className="font-display text-[1.55rem] tracking-[-0.02em] text-foreground transition duration-200 hover:text-black/75"
+        className="inline-flex items-center transition duration-200 hover:opacity-75"
         href="/"
       >
-        Articulated
+        <Image
+          alt="Articulated"
+          className="h-auto w-[150px] sm:w-[178px]"
+          height={394}
+          priority={isOverlay}
+          src="/logo.png"
+          width={1511}
+        />
       </Link>
       <nav className="flex items-center gap-2 sm:gap-3">
         {navLinks.map((link) => {
