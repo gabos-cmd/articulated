@@ -10,7 +10,7 @@ export function YearMomentsCard({
   moments
 }: YearMomentsCardProps) {
   return (
-    <section className="grid gap-5 border-t border-line py-12 sm:py-16 md:grid-cols-[220px_minmax(0,1fr)] md:gap-10">
+    <section className="grid gap-5 border-t border-line py-14 sm:py-18 md:grid-cols-[220px_minmax(0,1fr)] md:gap-10">
       <div>
         <p className="text-[11px] font-medium uppercase tracking-[0.16em] text-muted">
           What else was happening that year?
@@ -22,7 +22,7 @@ export function YearMomentsCard({
           <span className="text-foreground">{dateLabel}</span>.
         </p>
 
-        <div className="mt-8 grid gap-8 lg:grid-cols-3">
+        <div className="mt-10 grid gap-8 lg:grid-cols-3">
           {moments.map((moment, index) => (
             <article
               key={`${moment.label}-${index}`}

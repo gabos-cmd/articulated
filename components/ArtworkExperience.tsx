@@ -1,10 +1,10 @@
 "use client";
 
-import Image from "next/image";
 import { useEffect, useState } from "react";
 
 import { ArtworkCard } from "@/components/ArtworkCard";
 import { InfoSection } from "@/components/InfoSection";
+import { SiteNav } from "@/components/SiteNav";
 import { YearMomentsCard } from "@/components/YearMomentsCard";
 import { FAVORITES_STORAGE_KEY, type Artwork } from "@/lib/artwork";
 
@@ -15,11 +15,9 @@ type ArtworkExperienceProps = {
 export function ArtworkExperience({
   initialArtwork
 }: ArtworkExperienceProps) {
-  const [artwork, setArtwork] = useState(initialArtwork);
+  const artwork = initialArtwork;
   const [favorites, setFavorites] = useState<Artwork[]>([]);
   const [favoritesReady, setFavoritesReady] = useState(false);
-  const [isRefreshing, setIsRefreshing] = useState(false);
-  const [errorMessage, setErrorMessage] = useState<string | null>(null);
 
   useEffect(() => {
     try {
@@ -58,55 +56,22 @@ export function ArtworkExperience({
     });
   };
 
-  const handleLoadAnother = async () => {
-    setIsRefreshing(true);
-    setErrorMessage(null);
-
-    try {
-      const response = await fetch(`/api/artwork?exclude=${artwork.id}`, {
-        cache: "no-store"
-      });
-
-      if (!response.ok) {
-        throw new Error("Unable to load a new artwork.");
-      }
-
-      const nextArtwork = (await response.json()) as Artwork;
-      setArtwork(nextArtwork);
-    } catch {
-      setErrorMessage(
-        "The next artwork could not be loaded right now, so the current piece is staying on view."
-      );
-    } finally {
-      setIsRefreshing(false);
-    }
-  };
-
   return (
-    <main className="museum-shell min-h-screen px-5 pb-16 pt-8 sm:px-8 lg:px-10">
-      <div className="mx-auto max-w-[1380px]">
-        <header className="flex justify-center pb-12 pt-2 sm:pb-16 sm:pt-6 lg:pb-18">
-          <Image
-            alt="Articulated"
-            className="h-auto w-[220px] sm:w-[290px] lg:w-[360px]"
-            height={394}
-            priority
-            src="/Logo.png"
-            width={1511}
-          />
-        </header>
-
+    <main className="museum-shell min-h-screen bg-white">
+      <section className="relative overflow-hidden px-5 pb-18 pt-6 sm:px-8 lg:px-10">
+        <div className="mx-auto max-w-[1380px]">
+          <SiteNav variant="overlay" />
+        </div>
         <ArtworkCard
           artwork={artwork}
-          errorMessage={errorMessage}
           isFavorite={isFavorite}
-          isRefreshing={isRefreshing}
           favoriteCount={favorites.length}
           onFavoriteToggle={handleFavoriteToggle}
-          onLoadAnother={handleLoadAnother}
         />
+      </section>
 
-        <section className="mx-auto mt-20 max-w-5xl">
+      <section className="relative bg-white px-5 pb-24 sm:px-8 lg:px-10">
+        <div className="mx-auto max-w-5xl">
           <InfoSection
             title="Why this artwork matters"
             description={artwork.whyItMatters}
@@ -128,8 +93,8 @@ export function ArtworkExperience({
             description={artwork.lookingPrompt}
             tone="prompt"
           />
-        </section>
-      </div>
+        </div>
+      </section>
     </main>
   );
 }
