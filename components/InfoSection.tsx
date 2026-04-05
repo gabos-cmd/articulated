@@ -12,7 +12,7 @@ export function InfoSection({
   const isPrompt = tone === "prompt";
 
   return (
-    <section className="grid gap-5 border-t border-line py-10 sm:py-14 md:grid-cols-[220px_minmax(0,1fr)] md:gap-10">
+    <section className="grid gap-5 border-t border-line py-12 sm:py-16 md:grid-cols-[220px_minmax(0,1fr)] md:gap-10">
       <div>
         <p className="text-[11px] font-medium uppercase tracking-[0.16em] text-muted">
           {title}
@@ -22,8 +22,8 @@ export function InfoSection({
         <p
           className={
             isPrompt
-              ? "max-w-3xl font-display text-[2rem] leading-[1.35] tracking-[-0.02em] text-foreground sm:text-[2.4rem]"
-              : "max-w-3xl text-[16px] leading-8 text-foreground/88 sm:text-[18px]"
+              ? "max-w-3xl font-display text-[1.75rem] leading-[1.38] tracking-[-0.02em] text-foreground sm:text-[2.1rem]"
+              : "max-w-3xl text-[16px] leading-8 text-foreground/88 sm:text-[17px]"
           }
         >
           {description}

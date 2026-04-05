@@ -11,10 +11,10 @@ export function FavoriteButton({
 }: FavoriteButtonProps) {
   return (
     <button
-      className={`inline-flex min-h-12 items-center justify-center gap-3 rounded-full border px-5 py-3.5 text-sm font-medium transition duration-200 ${
+      className={`inline-flex min-h-11 items-center justify-center gap-2.5 rounded-full border px-5 py-3 text-sm font-medium transition duration-200 ${
         active
           ? "border-foreground bg-foreground text-white hover:bg-black/88"
-          : "border-line bg-white/75 text-foreground hover:bg-black/[0.03]"
+          : "border-line bg-white text-foreground hover:bg-black/[0.02]"
       }`}
       onClick={onClick}
       type="button"
@@ -36,7 +36,7 @@ function HeartIcon({ filled }: { filled: boolean }) {
   return (
     <svg
       aria-hidden="true"
-      className="size-4"
+      className="size-[15px]"
       fill={filled ? "currentColor" : "none"}
       stroke="currentColor"
       strokeWidth="1.8"

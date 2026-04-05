@@ -10,7 +10,7 @@ export function YearMomentsCard({
   moments
 }: YearMomentsCardProps) {
   return (
-    <section className="grid gap-5 border-t border-line py-10 sm:py-14 md:grid-cols-[220px_minmax(0,1fr)] md:gap-10">
+    <section className="grid gap-5 border-t border-line py-12 sm:py-16 md:grid-cols-[220px_minmax(0,1fr)] md:gap-10">
       <div>
         <p className="text-[11px] font-medium uppercase tracking-[0.16em] text-muted">
           What else was happening that year?

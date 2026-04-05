@@ -34,15 +34,15 @@ export function ArtworkCard({
   return (
     <article className="relative">
       <div
-        className={`pointer-events-none absolute inset-0 rounded-[2rem] bg-[radial-gradient(circle_at_top_right,rgba(17,17,17,0.04),transparent_22%)] transition-opacity duration-300 ${
+        className={`pointer-events-none absolute inset-x-0 top-0 h-[78vh] rounded-[2rem] bg-[radial-gradient(circle_at_top,rgba(17,17,17,0.03),transparent_55%)] transition-opacity duration-300 ${
           isRefreshing ? "opacity-100" : "opacity-0"
         }`}
       />
 
-      <div className="relative rounded-[2rem] bg-background-strong p-3 hero-shadow sm:p-4 lg:p-6">
-        <div className="group relative overflow-hidden rounded-[1.75rem] bg-[#f6f6f4] min-h-[58vh] sm:min-h-[66vh] lg:min-h-[78vh]">
+      <section className="relative flex min-h-[calc(100vh-9rem)] items-center justify-center">
+        <div className="group relative flex w-full items-center justify-center">
           {imageUnavailable ? (
-            <div className="flex min-h-[58vh] flex-col items-center justify-center gap-4 px-8 text-center sm:min-h-[66vh] lg:min-h-[78vh]">
+            <div className="image-stage flex w-full flex-col items-center justify-center gap-4 px-8 text-center sm:min-h-[74vh] lg:min-h-[78vh]">
               <span className="font-display text-3xl text-foreground sm:text-4xl">
                 Image currently unavailable
               </span>
@@ -53,13 +53,13 @@ export function ArtworkCard({
               </p>
             </div>
           ) : (
-            <div className="relative min-h-[58vh] sm:min-h-[66vh] lg:min-h-[78vh]">
+            <div className="relative image-stage w-full sm:min-h-[74vh] lg:min-h-[78vh]">
               <Image
                 fill
                 priority
                 unoptimized
                 alt={artwork.imageAlt}
-                className={`object-contain px-4 py-4 transition-transform duration-700 ease-out sm:px-8 sm:py-8 lg:px-12 lg:py-12 ${
+                className={`object-contain transition-transform duration-700 ease-out ${
                   isRefreshing ? "scale-[1.01]" : "group-hover:scale-[1.025]"
                 }`}
                 onError={() => setImageUnavailable(true)}
@@ -69,92 +69,74 @@ export function ArtworkCard({
             </div>
           )}
         </div>
+      </section>
 
-        <aside className="soft-panel relative mt-6 rounded-[1.75rem] border border-line p-6 sm:p-8 lg:absolute lg:bottom-10 lg:right-10 lg:mt-0 lg:w-[430px]">
-          <div className="space-y-5">
-            <div className="flex flex-wrap items-center gap-2 text-[11px] font-medium uppercase tracking-[0.16em] text-muted">
-              <span>
-                {artwork.sourceLabel}
-              </span>
-              {artwork.movement ? (
-                <>
-                  <span aria-hidden="true" className="text-black/30">
-                    /
-                  </span>
-                  {artwork.movement}
-                </>
-              ) : null}
-            </div>
+      <section className="mx-auto mt-10 max-w-3xl text-center sm:mt-14">
+        <div>
+          <h2 className="font-display text-[2.8rem] leading-[0.95] tracking-[-0.025em] text-foreground sm:text-[3.6rem] lg:text-[4.25rem]">
+            {artwork.title}
+          </h2>
+          <p className="mt-4 text-base leading-7 text-muted sm:text-lg">
+            <span className="text-foreground">{artwork.artist}</span>
+            <span className="mx-2 text-black/25">&middot;</span>
+            {artwork.date}
+          </p>
+        </div>
 
-            <div>
-              <h2 className="font-display text-[2.55rem] leading-[0.95] tracking-[-0.02em] text-foreground sm:text-[3.1rem]">
-                {artwork.title}
-              </h2>
-              <p className="mt-4 text-base leading-7 text-muted sm:text-lg">
-                <span className="text-foreground">{artwork.artist}</span>
-                <span className="mx-2 text-black/25">&middot;</span>
-                {artwork.date}
-              </p>
-            </div>
+        <dl className="mt-7 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-[13px] leading-6 text-muted sm:text-sm">
+          <MetadataItem label="Medium" value={artwork.medium} inline />
+          {artwork.movement ? (
+            <MetadataItem label="Movement" value={artwork.movement} inline />
+          ) : null}
+          {artwork.location ? (
+            <MetadataItem label="Origin" value={artwork.location} inline />
+          ) : null}
+        </dl>
 
-            <dl className="grid gap-x-6 gap-y-5 border-y border-line py-6 sm:grid-cols-2">
-              <MetadataItem label="Artist" value={artwork.artist} />
-              <MetadataItem label="Year" value={artwork.date} />
-              <MetadataItem label="Medium" value={artwork.medium} />
-              <MetadataItem
-                label={artwork.movement ? "Movement" : "Origin"}
-                value={
-                  artwork.movement ??
-                  artwork.location ??
-                  "Not listed in the artwork record"
-                }
-              />
-            </dl>
+        <div className="mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row">
+          <button
+            className="inline-flex min-h-11 items-center justify-center rounded-full bg-foreground px-5 py-3 text-sm font-medium text-white transition duration-200 hover:bg-black/88 disabled:cursor-wait disabled:bg-black/60"
+            disabled={isRefreshing}
+            onClick={onLoadAnother}
+            type="button"
+          >
+            {isRefreshing ? "Discovering another..." : "Discover another"}
+          </button>
+          <FavoriteButton
+            active={isFavorite}
+            count={favoriteCount}
+            onClick={onFavoriteToggle}
+          />
+        </div>
 
-            {artwork.location ? (
-              <p className="text-sm leading-7 text-muted">
-                Painted in or associated with{" "}
-                <span className="text-foreground">{artwork.location}</span>.
-              </p>
-            ) : null}
-          </div>
-
-          <div className="space-y-4">
-            <div className="flex flex-col gap-3 sm:flex-row">
-              <button
-                className="inline-flex min-h-12 items-center justify-center rounded-full bg-foreground px-5 py-3.5 text-sm font-medium text-white transition duration-200 hover:bg-black/88 disabled:cursor-wait disabled:bg-black/60"
-                disabled={isRefreshing}
-                onClick={onLoadAnother}
-                type="button"
-              >
-                {isRefreshing ? "Loading another artwork..." : "Load another artwork"}
-              </button>
-              <FavoriteButton
-                active={isFavorite}
-                count={favoriteCount}
-                onClick={onFavoriteToggle}
-              />
-            </div>
-            <p className="text-sm leading-6 text-muted">
-              Saved locally: <span className="text-foreground">{favoriteCount}</span>
-            </p>
-            <p className="min-h-6 text-sm leading-6 text-muted">
-              {errorMessage}
-            </p>
-          </div>
-        </aside>
-      </div>
+        <p className="mx-auto mt-4 min-h-6 max-w-xl text-sm leading-6 text-muted">
+          {errorMessage}
+        </p>
+      </section>
     </article>
   );
 }
 
 function MetadataItem({
   label,
-  value
+  value,
+  inline = false
 }: {
   label: string;
   value: string;
+  inline?: boolean;
 }) {
+  if (inline) {
+    return (
+      <div className="inline-flex items-center gap-2">
+        <dt className="text-[11px] font-medium uppercase tracking-[0.14em] text-black/42">
+          {label}
+        </dt>
+        <dd className="text-foreground">{value}</dd>
+      </div>
+    );
+  }
+
   return (
     <div>
       <dt className="text-[11px] font-medium uppercase tracking-[0.16em] text-muted">
