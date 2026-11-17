@@ -1,76 +1,57 @@
 import Link from "next/link";
 
-import { Brandmark, Landscape } from "@/components/illustrations";
+import { Countdown } from "@/components/Countdown";
+import { Nocturne, PaletteMark } from "@/components/illustrations";
 
-const columns = [
-  {
-    title: "Visit",
-    links: [
-      { href: "/", label: "Today's edition" },
-      { href: "/archive", label: "Archive" },
-      { href: "/collection", label: "The collection" }
-    ]
-  },
-  {
-    title: "Yours",
-    links: [
-      { href: "/journal", label: "Journal" },
-      { href: "/about", label: "About" }
-    ]
-  },
-  {
-    title: "Sources",
-    links: [
-      { href: "https://commons.wikimedia.org", label: "Wikimedia Commons" },
-      { href: "https://en.wikipedia.org", label: "Wikipedia" }
-    ]
-  }
+const links = [
+  { href: "/", label: "Today" },
+  { href: "/archive", label: "Archive" },
+  { href: "/collection", label: "Collection" },
+  { href: "/journal", label: "Journal" },
+  { href: "/account", label: "Account" },
+  { href: "/about", label: "About" }
 ];
 
 export function SiteFooter() {
   return (
-    <footer className="relative mt-24 overflow-hidden bg-sky text-ink">
-      <div className="relative z-10 mx-auto grid max-w-[1180px] gap-10 px-6 pt-16 sm:grid-cols-[1.2fr_2fr] sm:px-10">
-        <div className="max-w-sm">
-          <Link href="/" className="inline-flex items-center gap-2.5">
-            <span className="rounded-xl bg-cream p-1 shadow-[0_6px_14px_-8px_rgb(0_0_0/0.4)]">
-              <Brandmark className="h-8 w-8" />
-            </span>
-            <span className="display text-[1.75rem]">Articulated</span>
-          </Link>
-          <p className="mt-4 text-[0.9375rem] leading-relaxed text-ink/80">
-            One great artwork, every day. Five slow minutes with a painting, the story behind it, and the world it was made in.
-          </p>
-        </div>
-        <div className="grid grid-cols-3 gap-6 sm:justify-items-end">
-          {columns.map((col) => (
-            <div key={col.title}>
-              <h3 className="display text-lg">{col.title}</h3>
-              <ul className="mt-3 space-y-2 text-sm text-ink/75">
-                {col.links.map((l) => (
-                  <li key={l.href}>
-                    {l.href.startsWith("http") ? (
-                      <a href={l.href} target="_blank" rel="noreferrer" className="hover:text-ink">
-                        {l.label}
-                      </a>
-                    ) : (
-                      <Link href={l.href} className="hover:text-ink">
-                        {l.label}
-                      </Link>
-                    )}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
+    <footer className="relative mt-28 overflow-hidden bg-black text-cream">
+      <div className="relative z-10 mx-auto max-w-[1180px] px-6 pt-16 sm:px-10 sm:pt-20">
+        <div className="flex flex-col gap-10 lg:flex-row lg:items-end lg:justify-between">
+          <div>
+            <p className="hand text-2xl text-ochre">The next edition arrives in</p>
+            <p className="mt-1 text-[2.75rem] leading-none text-white sm:text-[4rem]">
+              <Countdown />
+            </p>
+            <p className="mt-4 max-w-sm text-[0.9375rem] leading-relaxed text-cream/65">
+              A new artwork every day at midnight (UTC). Five slow minutes, and a little more of art history sticks.
+            </p>
+          </div>
+          <nav className="grid grid-cols-3 gap-x-8 gap-y-3 text-[0.9375rem] sm:grid-cols-6 lg:grid-cols-3" aria-label="Footer">
+            {links.map((l) => (
+              <Link key={l.href} href={l.href} className="text-cream/75 transition-colors hover:text-white">
+                {l.label}
+              </Link>
+            ))}
+          </nav>
         </div>
       </div>
 
-      <div className="relative -mt-2 h-[280px] sm:-mt-6 sm:h-[420px]">
-        <Landscape className="absolute inset-0 h-full w-full" />
-        <div className="absolute inset-x-0 bottom-0 z-10 mx-auto flex max-w-[1180px] flex-wrap items-end justify-between gap-2 px-6 pb-6 text-[0.8125rem] text-ink/80 sm:px-10">
-          <span>© {new Date().getFullYear()} Articulated · made slowly by Gabriel</span>
-          <span className="hidden sm:inline">Images: public domain, via Wikimedia Commons</span>
+      <div className="relative h-[260px] sm:h-[400px]">
+        <Nocturne className="absolute inset-0 h-full w-full" />
+      </div>
+
+      <div className="relative z-10 bg-black">
+        <div className="mx-auto flex max-w-[1180px] flex-wrap items-center justify-between gap-4 px-6 py-6 sm:px-10">
+          <Link href="/" className="flex items-center gap-2.5">
+            <PaletteMark id="foot-mark" className="h-8 w-8" />
+            <span className="display text-[1.75rem] leading-none text-white">Articulated</span>
+          </Link>
+          <p className="text-[0.8125rem] text-cream/55">
+            © {new Date().getFullYear()} · made slowly by Gabriel · images public domain via{" "}
+            <a href="https://commons.wikimedia.org" className="underline decoration-cream/30 underline-offset-2 hover:text-cream" target="_blank" rel="noreferrer">
+              Wikimedia Commons
+            </a>
+          </p>
         </div>
       </div>
     </footer>

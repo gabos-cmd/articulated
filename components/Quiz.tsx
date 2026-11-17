@@ -37,21 +37,21 @@ export function Quiz({ slug, questions }: { slug: string; questions: QuizItem[] 
       {questions.map((q, qi) => {
         const picked = answers[qi];
         return (
-          <fieldset key={qi} className="glass rounded-[1.75rem] p-5 sm:p-7">
+          <fieldset key={qi} className="rounded-[1.5rem] bg-white p-5 shadow-[0_1px_2px_rgb(0_0_0/0.05)] sm:p-7">
             <legend className="sr-only">Question {qi + 1}</legend>
             <div className="relative flex items-baseline gap-3">
               <span className="numeral text-2xl text-ink-3">{qi + 1}.</span>
-              <p className="display text-[1.375rem] leading-snug sm:text-[1.625rem]">{q.question}</p>
+              <p className="display text-[1.6rem] leading-tight text-black sm:text-[1.9rem]">{q.question}</p>
             </div>
             <div className="relative mt-5 grid gap-2 sm:grid-cols-2">
               {q.options.map((opt, oi) => {
                 const isAnswer = oi === q.answer;
                 const isPicked = picked === oi;
                 const reveal = picked !== null;
-                let tone = "bg-white/55 hover:bg-white/85 border-white/70";
-                if (reveal && isAnswer) tone = "bg-moss/90 text-ink border-moss";
-                else if (reveal && isPicked) tone = "bg-terracotta/85 text-cream border-terracotta";
-                else if (reveal) tone = "bg-white/30 text-ink-3 border-white/40";
+                let tone = "bg-white border-black/12 hover:border-black hover:bg-paper/60";
+                if (reveal && isAnswer) tone = "bg-black text-white border-black";
+                else if (reveal && isPicked) tone = "bg-terracotta text-white border-terracotta line-through decoration-white/60";
+                else if (reveal) tone = "bg-white text-ink-3 border-black/5";
                 return (
                   <button
                     key={oi}
@@ -77,7 +77,7 @@ export function Quiz({ slug, questions }: { slug: string; questions: QuizItem[] 
       })}
 
       {done && (
-        <div className="rise flex items-center gap-5 rounded-[1.75rem] bg-ink px-6 py-5 text-cream">
+        <div className="rise flex items-center gap-5 rounded-[1.5rem] bg-black px-6 py-5 text-white">
           <span className="shrink-0 rounded-full bg-cream p-2">
             <SpotLaurel className="h-12 w-12" />
           </span>
