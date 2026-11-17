@@ -1,0 +1,779 @@
+{
+  "the-starry-night": {
+    "file": "File:Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg",
+    "width": 44567,
+    "height": 35291,
+    "src": {
+      "500": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/500px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "960": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/960px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "1920": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/1920px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg",
+    "palette": [
+      "#536d92",
+      "#3b4e7b",
+      "#202424",
+      "#323c4b",
+      "#728895",
+      "#a3a984"
+    ],
+    "artistBio": "Vincent Willem van Gogh was a Dutch Post-Impressionist painter who is among the most famous and influential figures in the history of Western art. In just over a decade he created about 2,100 artworks, including around 860 oil paintings, most of them in the last two years of his life. They include landscapes, still lifes, portraits and self-portraits, and are characterised by bold colours and dramatic, impulsive and expressive brushwork that contributed to the foundations of modern art.",
+    "artistUrl": "https://en.wikipedia.org/wiki/Vincent_van_Gogh"
+  },
+  "mona-lisa": {
+    "file": "File:Mona_Lisa,_by_Leonardo_da_Vinci,_from_C2RMF_retouched.jpg",
+    "width": 7479,
+    "height": 11146,
+    "src": {
+      "500": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg/500px-Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "960": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg/960px-Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "1920": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg/1920px-Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Mona_Lisa,_by_Leonardo_da_Vinci,_from_C2RMF_retouched.jpg",
+    "palette": [
+      "#190f22",
+      "#352329",
+      "#8b8852",
+      "#6a613c",
+      "#563f2e",
+      "#c8a959"
+    ],
+    "artistBio": "Leonardo di ser Piero da Vinci, better known as Leonardo da Vinci, was an Italian polymath of the High Renaissance who was active as a painter, draughtsman, engineer, scientist, anatomist, sculptor, and architect. While his fame initially rested on his achievements as a painter, he has also become known for his notebooks, in which he made drawings and notes on a variety of subjects, including anatomy, astronomy, botany, cartography, painting, and palaeontology. Leonardo is widely regarded as a genius who epitomised the Renaissance humanist ideal, and his collective works contributed to the development of European art to an extent rivalled only by that of his younger contemporary Michelangelo.",
+    "artistUrl": "https://en.wikipedia.org/wiki/Leonardo_da_Vinci"
+  },
+  "girl-with-a-pearl-earring": {
+    "file": "File:1665_Girl_with_a_Pearl_Earring.jpg",
+    "width": 12285,
+    "height": 14550,
+    "src": {
+      "500": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/1665_Girl_with_a_Pearl_Earring.jpg/500px-1665_Girl_with_a_Pearl_Earring.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "960": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/1665_Girl_with_a_Pearl_Earring.jpg/960px-1665_Girl_with_a_Pearl_Earring.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "1920": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/1665_Girl_with_a_Pearl_Earring.jpg/1920px-1665_Girl_with_a_Pearl_Earring.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:1665_Girl_with_a_Pearl_Earring.jpg",
+    "palette": [
+      "#231a0e",
+      "#2a251a",
+      "#48473c",
+      "#aa926f",
+      "#776954",
+      "#c7bbad"
+    ],
+    "artistBio": "Johannes Vermeer was a Dutch painter who specialized in domestic interior scenes of middle-class life. He is considered one of the greatest painters of the Dutch Golden Age. During his lifetime, he was a moderately successful provincial genre painter, recognized in Delft and The Hague.",
+    "artistUrl": "https://en.wikipedia.org/wiki/Johannes_Vermeer"
+  },
+  "liberty-leading-the-people": {
+    "file": "File:La_Liberté_guidant_le_peuple_-_Eugène_Delacroix_-_Musée_du_Louvre_Peintures_RF_129_-_après_restauration_2024.jpg",
+    "width": 10128,
+    "height": 8103,
+    "src": {
+      "500": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/La_Libert%C3%A9_guidant_le_peuple_-_Eug%C3%A8ne_Delacroix_-_Mus%C3%A9e_du_Louvre_Peintures_RF_129_-_apr%C3%A8s_restauration_2024.jpg/500px-La_Libert%C3%A9_guidant_le_peuple_-_Eug%C3%A8ne_Delacroix_-_Mus%C3%A9e_du_Louvre_Peintures_RF_129_-_apr%C3%A8s_restauration_2024.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "960": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/La_Libert%C3%A9_guidant_le_peuple_-_Eug%C3%A8ne_Delacroix_-_Mus%C3%A9e_du_Louvre_Peintures_RF_129_-_apr%C3%A8s_restauration_2024.jpg/960px-La_Libert%C3%A9_guidant_le_peuple_-_Eug%C3%A8ne_Delacroix_-_Mus%C3%A9e_du_Louvre_Peintures_RF_129_-_apr%C3%A8s_restauration_2024.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "1920": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/La_Libert%C3%A9_guidant_le_peuple_-_Eug%C3%A8ne_Delacroix_-_Mus%C3%A9e_du_Louvre_Peintures_RF_129_-_apr%C3%A8s_restauration_2024.jpg/1920px-La_Libert%C3%A9_guidant_le_peuple_-_Eug%C3%A8ne_Delacroix_-_Mus%C3%A9e_du_Louvre_Peintures_RF_129_-_apr%C3%A8s_restauration_2024.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:La_Libert%C3%A9_guidant_le_peuple_-_Eug%C3%A8ne_Delacroix_-_Mus%C3%A9e_du_Louvre_Peintures_RF_129_-_apr%C3%A8s_restauration_2024.jpg",
+    "palette": [
+      "#27201d",
+      "#423833",
+      "#585455",
+      "#9097a4",
+      "#85736e",
+      "#ced1d4"
+    ],
+    "artistBio": "Ferdinand Victor Eugène Delacroix was a French Romantic artist who was regarded as the leader of the French Romantic school.\nIn contrast to the Neoclassical perfectionism of his chief rival Ingres, Delacroix took for his inspiration the art of Rubens and painters of the Venetian Renaissance, with an attendant emphasis on colour and movement rather than clarity of outline and carefully modelled form. Dramatic and romantic content characterized the central themes of his maturity, and led him not to the classical models of Greek and Roman art, but to travel in North Africa in search of the exotic.",
+    "artistUrl": "https://en.wikipedia.org/wiki/Eug%C3%A8ne_Delacroix"
+  },
+  "impression-sunrise": {
+    "file": "File:Monet_-_Impression,_Sunrise.jpg",
+    "width": 5773,
+    "height": 4478,
+    "src": {
+      "500": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Monet_-_Impression%2C_Sunrise.jpg/500px-Monet_-_Impression%2C_Sunrise.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "960": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Monet_-_Impression%2C_Sunrise.jpg/960px-Monet_-_Impression%2C_Sunrise.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "1920": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Monet_-_Impression%2C_Sunrise.jpg/1920px-Monet_-_Impression%2C_Sunrise.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Monet_-_Impression,_Sunrise.jpg",
+    "palette": [
+      "#808579",
+      "#6f7c72",
+      "#8c9083",
+      "#987c68",
+      "#a98f7d",
+      "#5c6a5b"
+    ],
+    "artistBio": "Oscar-Claude Monet was a French painter and founder of Impressionism who is seen as a key precursor to modernism, especially in his attempts to paint nature as he perceived it. During his long career, he was the most consistent and prolific practitioner of Impressionism's philosophy of expressing one's perceptions of nature, especially as applied to plein air landscape painting. The term \"Impressionism\" is derived from the title of his painting Impression, Sunrise, which was exhibited in 1874 at the First Impressionist Exhibition, initiated by Monet and a number of like-minded artists as an alternative to the Salon.",
+    "artistUrl": "https://en.wikipedia.org/wiki/Claude_Monet"
+  },
+  "the-birth-of-venus": {
+    "file": "File:Sandro_Botticelli_-_La_nascita_di_Venere_-_Google_Art_Project_-_edited.jpg",
+    "width": 30000,
+    "height": 18840,
+    "src": {
+      "500": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Sandro_Botticelli_-_La_nascita_di_Venere_-_Google_Art_Project_-_edited.jpg/500px-Sandro_Botticelli_-_La_nascita_di_Venere_-_Google_Art_Project_-_edited.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "960": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Sandro_Botticelli_-_La_nascita_di_Venere_-_Google_Art_Project_-_edited.jpg/960px-Sandro_Botticelli_-_La_nascita_di_Venere_-_Google_Art_Project_-_edited.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "1920": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Sandro_Botticelli_-_La_nascita_di_Venere_-_Google_Art_Project_-_edited.jpg/1920px-Sandro_Botticelli_-_La_nascita_di_Venere_-_Google_Art_Project_-_edited.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Sandro_Botticelli_-_La_nascita_di_Venere_-_Google_Art_Project_-_edited.jpg",
+    "palette": [
+      "#d9d2b6",
+      "#c4b286",
+      "#705d3e",
+      "#373323",
+      "#aa824c",
+      "#909074"
+    ],
+    "artistBio": "Alessandro di Mariano di Vanni Filipepi, better known as Sandro Botticelli or simply Botticelli, was an Italian painter of the Early Renaissance. Botticelli's posthumous reputation suffered until the late 19th century, when he was rediscovered by the Pre-Raphaelites who stimulated a reappraisal of his work. Since then, his paintings have been seen to represent the linear grace of late Italian Gothic and some Early Renaissance painting, even though they date from the latter half of the Italian Renaissance period.",
+    "artistUrl": "https://en.wikipedia.org/wiki/Sandro_Botticelli"
+  },
+  "the-night-watch": {
+    "file": "File:La_ronda_de_noche,_por_Rembrandt_van_Rijn.jpg",
+    "width": 14168,
+    "height": 11528,
+    "src": {
+      "500": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/La_ronda_de_noche%2C_por_Rembrandt_van_Rijn.jpg/500px-La_ronda_de_noche%2C_por_Rembrandt_van_Rijn.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "960": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/La_ronda_de_noche%2C_por_Rembrandt_van_Rijn.jpg/960px-La_ronda_de_noche%2C_por_Rembrandt_van_Rijn.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "1920": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/La_ronda_de_noche%2C_por_Rembrandt_van_Rijn.jpg/1920px-La_ronda_de_noche%2C_por_Rembrandt_van_Rijn.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:La_ronda_de_noche,_por_Rembrandt_van_Rijn.jpg",
+    "palette": [
+      "#110f07",
+      "#211809",
+      "#36240d",
+      "#563914",
+      "#875f23",
+      "#b4955a"
+    ],
+    "artistBio": "Rembrandt Harmenszoon van Rijn, known mononymously as Rembrandt, was a Dutch Golden Age painter, printmaker, and draughtsman. He is generally considered one of the greatest visual artists in the history of Western art. It is estimated that Rembrandt's surviving works amount to about three hundred paintings, three hundred etchings, and several hundred drawings.",
+    "artistUrl": "https://en.wikipedia.org/wiki/Rembrandt"
+  },
+  "the-last-supper": {
+    "file": "File:The_Last_Supper_-_Leonardo_Da_Vinci_-_High_Resolution_32x16.jpg",
+    "width": 9600,
+    "height": 4800,
+    "src": {
+      "500": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/The_Last_Supper_-_Leonardo_Da_Vinci_-_High_Resolution_32x16.jpg/500px-The_Last_Supper_-_Leonardo_Da_Vinci_-_High_Resolution_32x16.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "960": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/The_Last_Supper_-_Leonardo_Da_Vinci_-_High_Resolution_32x16.jpg/960px-The_Last_Supper_-_Leonardo_Da_Vinci_-_High_Resolution_32x16.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "1920": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/The_Last_Supper_-_Leonardo_Da_Vinci_-_High_Resolution_32x16.jpg/1920px-The_Last_Supper_-_Leonardo_Da_Vinci_-_High_Resolution_32x16.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:The_Last_Supper_-_Leonardo_Da_Vinci_-_High_Resolution_32x16.jpg",
+    "palette": [
+      "#614e3f",
+      "#473526",
+      "#7c685a",
+      "#9b8a7d",
+      "#baaea7",
+      "#301e13"
+    ],
+    "artistBio": "Leonardo di ser Piero da Vinci, better known as Leonardo da Vinci, was an Italian polymath of the High Renaissance who was active as a painter, draughtsman, engineer, scientist, anatomist, sculptor, and architect. While his fame initially rested on his achievements as a painter, he has also become known for his notebooks, in which he made drawings and notes on a variety of subjects, including anatomy, astronomy, botany, cartography, painting, and palaeontology. Leonardo is widely regarded as a genius who epitomised the Renaissance humanist ideal, and his collective works contributed to the development of European art to an extent rivalled only by that of his younger contemporary Michelangelo.",
+    "artistUrl": "https://en.wikipedia.org/wiki/Leonardo_da_Vinci"
+  },
+  "the-school-of-athens": {
+    "file": "File:\"The_School_of_Athens\"_by_Raffaello_Sanzio_da_Urbino.jpg",
+    "width": 3820,
+    "height": 2964,
+    "src": {
+      "500": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/%22The_School_of_Athens%22_by_Raffaello_Sanzio_da_Urbino.jpg/500px-%22The_School_of_Athens%22_by_Raffaello_Sanzio_da_Urbino.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "960": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/%22The_School_of_Athens%22_by_Raffaello_Sanzio_da_Urbino.jpg/960px-%22The_School_of_Athens%22_by_Raffaello_Sanzio_da_Urbino.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "1920": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/%22The_School_of_Athens%22_by_Raffaello_Sanzio_da_Urbino.jpg/1920px-%22The_School_of_Athens%22_by_Raffaello_Sanzio_da_Urbino.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:%22The_School_of_Athens%22_by_Raffaello_Sanzio_da_Urbino.jpg",
+    "palette": [
+      "#95866c",
+      "#7c684c",
+      "#b5a689",
+      "#d9d0b1",
+      "#593f24",
+      "#070401"
+    ],
+    "artistBio": "Raffaello Sanzio da Urbino, now generally known in English as Raphael, was an Italian painter and architect of the High Renaissance. His work is admired for its clarity of form, ease of composition, and visual achievement of the Neoplatonic ideal of human grandeur. Together with Leonardo da Vinci and Michelangelo, he forms the traditional trinity of great masters of that period.",
+    "artistUrl": "https://en.wikipedia.org/wiki/Raphael"
+  },
+  "napoleon-crossing-the-alps": {
+    "file": "File:David - Napoleon crossing the Alps - Malmaison1.jpg",
+    "width": 1169,
+    "height": 1371,
+    "src": {
+      "500": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/David_-_Napoleon_crossing_the_Alps_-_Malmaison1.jpg/500px-David_-_Napoleon_crossing_the_Alps_-_Malmaison1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "960": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/David_-_Napoleon_crossing_the_Alps_-_Malmaison1.jpg/960px-David_-_Napoleon_crossing_the_Alps_-_Malmaison1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "1920": "https://upload.wikimedia.org/wikipedia/commons/3/31/David_-_Napoleon_crossing_the_Alps_-_Malmaison1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+    },
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:David_-_Napoleon_crossing_the_Alps_-_Malmaison1.jpg",
+    "palette": [
+      "#778978",
+      "#6c654d",
+      "#4b412f",
+      "#a8a283",
+      "#261712",
+      "#e3d9ad"
+    ],
+    "artistBio": "Jacques-Louis David was a French painter in the Neoclassical style, considered to be the preeminent painter of the era. In the 1780s, his cerebral brand of history painting marked a change in taste away from Rococo frivolity toward classical austerity, severity, and heightened feeling, which harmonized with the moral climate of the final years of the Ancien Régime.\nDavid later became an active supporter of the French Revolution and friend of Maximilien Robespierre, and was effectively a dictator of the arts under the French Republic.",
+    "artistUrl": "https://en.wikipedia.org/wiki/Jacques-Louis_David"
+  },
+  "las-meninas": {
+    "file": "File:Las_Meninas,_by_Diego_Velázquez,_from_Prado_in_Google_Earth.jpg",
+    "width": 26065,
+    "height": 30000,
+    "src": {
+      "500": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Las_Meninas%2C_by_Diego_Vel%C3%A1zquez%2C_from_Prado_in_Google_Earth.jpg/500px-Las_Meninas%2C_by_Diego_Vel%C3%A1zquez%2C_from_Prado_in_Google_Earth.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "960": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Las_Meninas%2C_by_Diego_Vel%C3%A1zquez%2C_from_Prado_in_Google_Earth.jpg/960px-Las_Meninas%2C_by_Diego_Vel%C3%A1zquez%2C_from_Prado_in_Google_Earth.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "1920": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Las_Meninas%2C_by_Diego_Vel%C3%A1zquez%2C_from_Prado_in_Google_Earth.jpg/1920px-Las_Meninas%2C_by_Diego_Vel%C3%A1zquez%2C_from_Prado_in_Google_Earth.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Las_Meninas,_by_Diego_Vel%C3%A1zquez,_from_Prado_in_Google_Earth.jpg",
+    "palette": [
+      "#18130d",
+      "#0c0a07",
+      "#261c10",
+      "#3b2c19",
+      "#5d442a",
+      "#8d6c49"
+    ],
+    "artistBio": "Diego Rodríguez de Silva y Velázquez was a Spanish Baroque painter, the leading artist in the court of King Philip IV of Spain and Portugal, and of the Spanish Golden Age. He is generally considered one of the greatest artists in the history of Western art.\nHe was an individualistic artist of the Baroque period.",
+    "artistUrl": "https://en.wikipedia.org/wiki/Diego_Vel%C3%A1zquez"
+  },
+  "the-great-wave": {
+    "file": "File:Tsunami_by_hokusai_19th_century.jpg",
+    "width": 3859,
+    "height": 2594,
+    "src": {
+      "500": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Tsunami_by_hokusai_19th_century.jpg/500px-Tsunami_by_hokusai_19th_century.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "960": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Tsunami_by_hokusai_19th_century.jpg/960px-Tsunami_by_hokusai_19th_century.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "1920": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Tsunami_by_hokusai_19th_century.jpg/1920px-Tsunami_by_hokusai_19th_century.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Tsunami_by_hokusai_19th_century.jpg",
+    "palette": [
+      "#f5efdb",
+      "#f2e2c2",
+      "#cbcdc0",
+      "#355573",
+      "#a8ada8",
+      "#70828d"
+    ],
+    "artistBio": "Katsushika Hokusai was a Japanese ukiyo-e artist of the Edo period, active as a painter and printmaker. His woodblock print series Thirty-Six Views of Mount Fuji includes the iconic print The Great Wave off Kanagawa. Hokusai was instrumental in developing ukiyo-e from a style of portraiture largely focused on courtesans and actors into a much broader style of art that focused on landscapes, plants, and animals.",
+    "artistUrl": "https://en.wikipedia.org/wiki/Hokusai"
+  },
+  "the-garden-of-earthly-delights": {
+    "file": "File:The_Garden_of_earthly_delights.jpg",
+    "width": 39137,
+    "height": 22279,
+    "src": {
+      "500": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/The_Garden_of_earthly_delights.jpg/500px-The_Garden_of_earthly_delights.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "960": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/The_Garden_of_earthly_delights.jpg/960px-The_Garden_of_earthly_delights.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "1920": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/The_Garden_of_earthly_delights.jpg/1920px-The_Garden_of_earthly_delights.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:The_Garden_of_earthly_delights.jpg",
+    "palette": [
+      "#746832",
+      "#9b8d50",
+      "#1c1a0e",
+      "#454223",
+      "#adb096",
+      "#697d74"
+    ],
+    "artistBio": "Hieronymus Bosch was a Dutch painter from Brabant. He is one of the most notable representatives of the Early Netherlandish painting school. His work, generally oil on oak wood, mainly contains fantastic illustrations of religious concepts and narratives.",
+    "artistUrl": "https://en.wikipedia.org/wiki/Hieronymus_Bosch"
+  },
+  "arnolfini-portrait": {
+    "file": "File:The_Arnolfini_portrait_(1434).jpg",
+    "width": 8283,
+    "height": 11331,
+    "src": {
+      "500": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/The_Arnolfini_portrait_%281434%29.jpg/500px-The_Arnolfini_portrait_%281434%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "960": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/The_Arnolfini_portrait_%281434%29.jpg/960px-The_Arnolfini_portrait_%281434%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "1920": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/The_Arnolfini_portrait_%281434%29.jpg/1920px-The_Arnolfini_portrait_%281434%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:The_Arnolfini_portrait_(1434).jpg",
+    "palette": [
+      "#342a1f",
+      "#1f1f14",
+      "#4d3322",
+      "#313f0b",
+      "#635139",
+      "#978165"
+    ],
+    "artistBio": "Jan van Eyck was an early Netherlandish painter active in Bruges who was one of the early innovators of what became known as early Netherlandish painting, and one of the supreme figures of the Early Northern Renaissance. Such was his legacy, that he has been called \"the inventor of oil-painting\" by Vasari, Ernst Gombrich, and others, although this claim is now considered an oversimplification.\nSurviving records date his birth at around 1380 or 1390, in Maaseik by the Limburg in present-day Belgium.",
+    "artistUrl": "https://en.wikipedia.org/wiki/Jan_van_Eyck"
+  },
+  "the-hay-wain": {
+    "file": "File:John_Constable_-_The_Hay_Wain_(1821).jpg",
+    "width": 6128,
+    "height": 4226,
+    "src": {
+      "500": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/John_Constable_-_The_Hay_Wain_%281821%29.jpg/500px-John_Constable_-_The_Hay_Wain_%281821%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "960": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/John_Constable_-_The_Hay_Wain_%281821%29.jpg/960px-John_Constable_-_The_Hay_Wain_%281821%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "1920": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/John_Constable_-_The_Hay_Wain_%281821%29.jpg/1920px-John_Constable_-_The_Hay_Wain_%281821%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:John_Constable_-_The_Hay_Wain_(1821).jpg",
+    "palette": [
+      "#3d321f",
+      "#221b15",
+      "#8e9398",
+      "#5b4e30",
+      "#bdbdb7",
+      "#726f5f"
+    ],
+    "artistBio": "John Constable was an English landscape painter in the Romantic tradition. Born in Suffolk, he is known principally for revolutionising the genre of landscape painting with his pictures of Dedham Vale, the area on the borderland of Suffolk and north Essex surrounding his home – now known as \"Constable Country\" – which he invested with an intensity of affection. \"I should paint my own places best\", he wrote to his friend John Fisher in 1821, \"painting is but another word for feeling.\"\nConstable's most famous paintings include Wivenhoe Park, Dedham Vale and The Hay Wain.",
+    "artistUrl": "https://en.wikipedia.org/wiki/John_Constable"
+  },
+  "wanderer-above-the-sea-of-fog": {
+    "file": "File:Caspar_David_Friedrich_-_Wanderer_above_the_Sea_of_Fog.jpeg",
+    "width": 5256,
+    "height": 6742,
+    "src": {
+      "500": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Caspar_David_Friedrich_-_Wanderer_above_the_Sea_of_Fog.jpeg/500px-Caspar_David_Friedrich_-_Wanderer_above_the_Sea_of_Fog.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "960": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Caspar_David_Friedrich_-_Wanderer_above_the_Sea_of_Fog.jpeg/960px-Caspar_David_Friedrich_-_Wanderer_above_the_Sea_of_Fog.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "1920": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Caspar_David_Friedrich_-_Wanderer_above_the_Sea_of_Fog.jpeg/1920px-Caspar_David_Friedrich_-_Wanderer_above_the_Sea_of_Fog.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Caspar_David_Friedrich_-_Wanderer_above_the_Sea_of_Fog.jpeg",
+    "palette": [
+      "#2e271c",
+      "#aba9b1",
+      "#cac4c5",
+      "#91949e",
+      "#747779",
+      "#544f41"
+    ],
+    "artistBio": "Caspar David Friedrich was a German Romantic landscape painter, generally considered the most important German artist of his generation, whose often symbolic, and anti-classical work, conveys a subjective, emotional response to the natural world. Friedrich's paintings often set contemplative human figures silhouetted against night skies, morning mists, barren trees or Gothic ruins. Art historian Christopher John Murray described their presence, in diminished perspective, amid expansive landscapes, as reducing the figures to a scale that directs \"the viewer's gaze towards their metaphysical dimension\".",
+    "artistUrl": "https://en.wikipedia.org/wiki/Caspar_David_Friedrich"
+  },
+  "the-third-of-may-1808": {
+    "file": "File:El_Tres_de_Mayo,_by_Francisco_de_Goya,_from_Prado_thin_black_margin.jpg",
+    "width": 29294,
+    "height": 22626,
+    "src": {
+      "500": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/El_Tres_de_Mayo%2C_by_Francisco_de_Goya%2C_from_Prado_thin_black_margin.jpg/500px-El_Tres_de_Mayo%2C_by_Francisco_de_Goya%2C_from_Prado_thin_black_margin.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "960": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/El_Tres_de_Mayo%2C_by_Francisco_de_Goya%2C_from_Prado_thin_black_margin.jpg/960px-El_Tres_de_Mayo%2C_by_Francisco_de_Goya%2C_from_Prado_thin_black_margin.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "1920": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/El_Tres_de_Mayo%2C_by_Francisco_de_Goya%2C_from_Prado_thin_black_margin.jpg/1920px-El_Tres_de_Mayo%2C_by_Francisco_de_Goya%2C_from_Prado_thin_black_margin.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:El_Tres_de_Mayo,_by_Francisco_de_Goya,_from_Prado_thin_black_margin.jpg",
+    "palette": [
+      "#1c1915",
+      "#2d271e",
+      "#453626",
+      "#634d34",
+      "#8b6d4a",
+      "#b29067"
+    ],
+    "artistBio": "Francisco José de Goya y Lucientes was a Spanish romantic painter and printmaker. He is considered the most important Spanish artist of the late 18th and early 19th centuries. His paintings, drawings, and engravings reflected contemporary historical upheavals and influenced important 19th- and 20th-century painters.",
+    "artistUrl": "https://en.wikipedia.org/wiki/Francisco_Goya"
+  },
+  "a-sunday-on-la-grande-jatte": {
+    "file": "File:A_Sunday_on_La_Grande_Jatte,_Georges_Seurat,_1884.jpg",
+    "width": 20000,
+    "height": 13313,
+    "src": {
+      "500": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/A_Sunday_on_La_Grande_Jatte%2C_Georges_Seurat%2C_1884.jpg/500px-A_Sunday_on_La_Grande_Jatte%2C_Georges_Seurat%2C_1884.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "960": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/A_Sunday_on_La_Grande_Jatte%2C_Georges_Seurat%2C_1884.jpg/960px-A_Sunday_on_La_Grande_Jatte%2C_Georges_Seurat%2C_1884.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "1920": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/A_Sunday_on_La_Grande_Jatte%2C_Georges_Seurat%2C_1884.jpg/1920px-A_Sunday_on_La_Grande_Jatte%2C_Georges_Seurat%2C_1884.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:A_Sunday_on_La_Grande_Jatte,_Georges_Seurat,_1884.jpg",
+    "palette": [
+      "#6c6b65",
+      "#4c5554",
+      "#8c837e",
+      "#b4a765",
+      "#333f3b",
+      "#b7bbba"
+    ],
+    "artistBio": "Georges Pierre Seurat was a French post-Impressionist artist. He devised the painting techniques known as chromoluminarism and pointillism and used conté crayon for drawings on paper with a rough surface.\nSeurat's artistic personality combined qualities that are usually thought of as opposed and incompatible: on the one hand, his extreme and delicate sensibility, on the other, a passion for logical abstraction and an almost mathematical precision of mind.",
+    "artistUrl": "https://en.wikipedia.org/wiki/Georges_Seurat"
+  },
+  "the-kiss": {
+    "file": "File:The_Kiss_-_Gustav_Klimt_-_Google_Cultural_Institute.jpg",
+    "width": 7376,
+    "height": 7401,
+    "src": {
+      "500": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/The_Kiss_-_Gustav_Klimt_-_Google_Cultural_Institute.jpg/500px-The_Kiss_-_Gustav_Klimt_-_Google_Cultural_Institute.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "960": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/The_Kiss_-_Gustav_Klimt_-_Google_Cultural_Institute.jpg/960px-The_Kiss_-_Gustav_Klimt_-_Google_Cultural_Institute.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "1920": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/The_Kiss_-_Gustav_Klimt_-_Google_Cultural_Institute.jpg/1920px-The_Kiss_-_Gustav_Klimt_-_Google_Cultural_Institute.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:The_Kiss_-_Gustav_Klimt_-_Google_Cultural_Institute.jpg",
+    "palette": [
+      "#97854a",
+      "#816d37",
+      "#c0a64f",
+      "#888b6e",
+      "#aea276",
+      "#544627"
+    ],
+    "artistBio": "Gustav Klimt was an Austrian symbolist painter and a founding member of the Vienna Secession movement. His work helped define the Art Nouveau style in Europe. Klimt is known for his paintings, murals, sketches, and other objets d'art.",
+    "artistUrl": "https://en.wikipedia.org/wiki/Gustav_Klimt"
+  },
+  "the-scream": {
+    "file": "File:Edvard_Munch,_1893,_The_Scream,_oil,_tempera_and_pastel_on_cardboard,_91_x_73_cm,_National_Gallery_of_Norway.jpg",
+    "width": 3223,
+    "height": 4000,
+    "src": {
+      "500": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Edvard_Munch%2C_1893%2C_The_Scream%2C_oil%2C_tempera_and_pastel_on_cardboard%2C_91_x_73_cm%2C_National_Gallery_of_Norway.jpg/500px-Edvard_Munch%2C_1893%2C_The_Scream%2C_oil%2C_tempera_and_pastel_on_cardboard%2C_91_x_73_cm%2C_National_Gallery_of_Norway.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "960": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Edvard_Munch%2C_1893%2C_The_Scream%2C_oil%2C_tempera_and_pastel_on_cardboard%2C_91_x_73_cm%2C_National_Gallery_of_Norway.jpg/960px-Edvard_Munch%2C_1893%2C_The_Scream%2C_oil%2C_tempera_and_pastel_on_cardboard%2C_91_x_73_cm%2C_National_Gallery_of_Norway.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "1920": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Edvard_Munch%2C_1893%2C_The_Scream%2C_oil%2C_tempera_and_pastel_on_cardboard%2C_91_x_73_cm%2C_National_Gallery_of_Norway.jpg/1920px-Edvard_Munch%2C_1893%2C_The_Scream%2C_oil%2C_tempera_and_pastel_on_cardboard%2C_91_x_73_cm%2C_National_Gallery_of_Norway.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Edvard_Munch,_1893,_The_Scream,_oil,_tempera_and_pastel_on_cardboard,_91_x_73_cm,_National_Gallery_of_Norway.jpg",
+    "palette": [
+      "#826f5b",
+      "#4f4746",
+      "#a35e41",
+      "#735d4f",
+      "#a57856",
+      "#5c595a"
+    ],
+    "artistBio": "Edvard Munch was a Norwegian painter. His 1893 work The Scream has become one of the iconic and acclaimed images in all of Western art.\nMunch's childhood was overshadowed by illness, bereavement and the dread of inheriting a mental condition that ran in the family.",
+    "artistUrl": "https://en.wikipedia.org/wiki/Edvard_Munch"
+  },
+  "the-fighting-temeraire": {
+    "file": "File:The_Fighting_Temeraire,_JMW_Turner,_National_Gallery.jpg",
+    "width": 5684,
+    "height": 4223,
+    "src": {
+      "500": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/The_Fighting_Temeraire%2C_JMW_Turner%2C_National_Gallery.jpg/500px-The_Fighting_Temeraire%2C_JMW_Turner%2C_National_Gallery.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "960": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/The_Fighting_Temeraire%2C_JMW_Turner%2C_National_Gallery.jpg/960px-The_Fighting_Temeraire%2C_JMW_Turner%2C_National_Gallery.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "1920": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/The_Fighting_Temeraire%2C_JMW_Turner%2C_National_Gallery.jpg/1920px-The_Fighting_Temeraire%2C_JMW_Turner%2C_National_Gallery.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:The_Fighting_Temeraire,_JMW_Turner,_National_Gallery.jpg",
+    "palette": [
+      "#948469",
+      "#776143",
+      "#9b9688",
+      "#757068",
+      "#b1ad9f",
+      "#564131"
+    ],
+    "artistBio": "Joseph Mallord William Turner, known during his lifetime as William Turner, was an English Romantic painter who is regarded as one of the greatest British painters of the 19th century. His expressive renditions of light and atmosphere and bold use of colour in landscape painting inspired the early impressionist painters Claude Monet and Camille Pissarro.\nTurner started his career as an architectural draughtsman and watercolourist and gained academic recognition as an oil painter.",
+    "artistUrl": "https://en.wikipedia.org/wiki/J._M._W._Turner"
+  },
+  "a-bar-at-the-folies-bergere": {
+    "file": "File:\"Un_Bar_aux_Folies-Bergère\"_by_Édouard_Manet_(1882).jpg",
+    "width": 12580,
+    "height": 9236,
+    "src": {
+      "500": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/%22Un_Bar_aux_Folies-Berg%C3%A8re%22_by_%C3%89douard_Manet_%281882%29.jpg/500px-%22Un_Bar_aux_Folies-Berg%C3%A8re%22_by_%C3%89douard_Manet_%281882%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "960": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/%22Un_Bar_aux_Folies-Berg%C3%A8re%22_by_%C3%89douard_Manet_%281882%29.jpg/960px-%22Un_Bar_aux_Folies-Berg%C3%A8re%22_by_%C3%89douard_Manet_%281882%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "1920": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/%22Un_Bar_aux_Folies-Berg%C3%A8re%22_by_%C3%89douard_Manet_%281882%29.jpg/1920px-%22Un_Bar_aux_Folies-Berg%C3%A8re%22_by_%C3%89douard_Manet_%281882%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:%22Un_Bar_aux_Folies-Berg%C3%A8re%22_by_%C3%89douard_Manet_(1882).jpg",
+    "palette": [
+      "#12161b",
+      "#959089",
+      "#786b61",
+      "#514b49",
+      "#333030",
+      "#b4ada4"
+    ],
+    "artistBio": "Édouard Manet was a French modernist painter. He was one of the first 19th-century artists to paint modern life, as well as a pivotal figure in the transition from Realism to Impressionism.\nBorn into an upper-class household with strong political connections, Manet rejected the naval career originally envisioned for him; he became engrossed in the world of painting.",
+    "artistUrl": "https://en.wikipedia.org/wiki/%C3%89douard_Manet"
+  },
+  "the-gleaners": {
+    "file": "File:Jean-François_Millet_-_Gleaners_-_Google_Art_Project_2.jpg",
+    "width": 5354,
+    "height": 4006,
+    "src": {
+      "500": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Jean-Fran%C3%A7ois_Millet_-_Gleaners_-_Google_Art_Project_2.jpg/500px-Jean-Fran%C3%A7ois_Millet_-_Gleaners_-_Google_Art_Project_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "960": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Jean-Fran%C3%A7ois_Millet_-_Gleaners_-_Google_Art_Project_2.jpg/960px-Jean-Fran%C3%A7ois_Millet_-_Gleaners_-_Google_Art_Project_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "1920": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Jean-Fran%C3%A7ois_Millet_-_Gleaners_-_Google_Art_Project_2.jpg/1920px-Jean-Fran%C3%A7ois_Millet_-_Gleaners_-_Google_Art_Project_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Jean-Fran%C3%A7ois_Millet_-_Gleaners_-_Google_Art_Project_2.jpg",
+    "palette": [
+      "#282023",
+      "#9b8d68",
+      "#bcb09c",
+      "#4f4233",
+      "#d3c3b2",
+      "#7a6a48"
+    ],
+    "artistBio": "Jean-François Millet was a French painter and one of the founders of the Barbizon School in rural France. Millet is noted for his paintings of peasant farmers and can be categorized as part of the Realism art movement. Toward the end of his career, he became increasingly interested in painting pure landscapes.",
+    "artistUrl": "https://en.wikipedia.org/wiki/Jean-Fran%C3%A7ois_Millet"
+  },
+  "the-hunters-in-the-snow": {
+    "file": "File:Pieter_Bruegel_the_Elder_-_Hunters_in_the_Snow_(Winter)_-_Google_Art_Project.jpg",
+    "width": 6819,
+    "height": 4853,
+    "src": {
+      "500": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/Pieter_Bruegel_the_Elder_-_Hunters_in_the_Snow_%28Winter%29_-_Google_Art_Project.jpg/500px-Pieter_Bruegel_the_Elder_-_Hunters_in_the_Snow_%28Winter%29_-_Google_Art_Project.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "960": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/Pieter_Bruegel_the_Elder_-_Hunters_in_the_Snow_%28Winter%29_-_Google_Art_Project.jpg/960px-Pieter_Bruegel_the_Elder_-_Hunters_in_the_Snow_%28Winter%29_-_Google_Art_Project.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "1920": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/Pieter_Bruegel_the_Elder_-_Hunters_in_the_Snow_%28Winter%29_-_Google_Art_Project.jpg/1920px-Pieter_Bruegel_the_Elder_-_Hunters_in_the_Snow_%28Winter%29_-_Google_Art_Project.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Pieter_Bruegel_the_Elder_-_Hunters_in_the_Snow_(Winter)_-_Google_Art_Project.jpg",
+    "palette": [
+      "#636b53",
+      "#4e4630",
+      "#e3d8bf",
+      "#8c886f",
+      "#24201a",
+      "#b5ac92"
+    ],
+    "artistBio": "Pieter Bruegel the Elder was among the most significant artists of Dutch and Flemish Renaissance painting, a painter and printmaker, known for his landscapes and peasant scenes; he was a pioneer in presenting both types of subject as large paintings. In the 20th and 21st centuries, Bruegel works including Landscape with the Fall of Icarus and The Hunters in the Snow have inspired artists in both the literary arts and in cinema.",
+    "artistUrl": "https://en.wikipedia.org/wiki/Pieter_Bruegel_the_Elder"
+  },
+  "the-ambassadors": {
+    "file": "File:Hans_Holbein_the_Younger_-_The_Ambassadors_-_Google_Art_Project.jpg",
+    "width": 30000,
+    "height": 29560,
+    "src": {
+      "500": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Hans_Holbein_the_Younger_-_The_Ambassadors_-_Google_Art_Project.jpg/500px-Hans_Holbein_the_Younger_-_The_Ambassadors_-_Google_Art_Project.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "960": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Hans_Holbein_the_Younger_-_The_Ambassadors_-_Google_Art_Project.jpg/960px-Hans_Holbein_the_Younger_-_The_Ambassadors_-_Google_Art_Project.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "1920": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Hans_Holbein_the_Younger_-_The_Ambassadors_-_Google_Art_Project.jpg/1920px-Hans_Holbein_the_Younger_-_The_Ambassadors_-_Google_Art_Project.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Hans_Holbein_the_Younger_-_The_Ambassadors_-_Google_Art_Project.jpg",
+    "palette": [
+      "#12100e",
+      "#242113",
+      "#383716",
+      "#8c7964",
+      "#5e4b38",
+      "#b4a794"
+    ],
+    "artistBio": "Hans Holbein the Younger was a German painter and printmaker active in Switzerland and England. He worked in a Northern Renaissance style, and is considered one of the greatest portraitists of the 16th century. He also produced religious art, satire, and Reformation propaganda, and he made a significant contribution to the history of book design.",
+    "artistUrl": "https://en.wikipedia.org/wiki/Hans_Holbein_the_Younger"
+  },
+  "judith-slaying-holofernes": {
+    "file": "File:Artemisia_Gentileschi_-_Judith_Beheading_Holofernes_-_WGA8563.jpg",
+    "width": 1178,
+    "height": 1500,
+    "src": {
+      "500": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Artemisia_Gentileschi_-_Judith_Beheading_Holofernes_-_WGA8563.jpg/500px-Artemisia_Gentileschi_-_Judith_Beheading_Holofernes_-_WGA8563.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "960": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Artemisia_Gentileschi_-_Judith_Beheading_Holofernes_-_WGA8563.jpg/960px-Artemisia_Gentileschi_-_Judith_Beheading_Holofernes_-_WGA8563.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "1920": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Artemisia_Gentileschi_-_Judith_Beheading_Holofernes_-_WGA8563.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+    },
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Artemisia_Gentileschi_-_Judith_Beheading_Holofernes_-_WGA8563.jpg",
+    "palette": [
+      "#0d0b0d",
+      "#231b1a",
+      "#40312c",
+      "#604b3f",
+      "#9b775c",
+      "#cfb194"
+    ],
+    "artistBio": "Artemisia Lomi Gentileschi was an Italian Baroque painter. Gentileschi is considered among the most accomplished 17th-century artists, initially working in the style of Caravaggio. She was producing professional work by the age of 15.",
+    "artistUrl": "https://en.wikipedia.org/wiki/Artemisia_Gentileschi"
+  },
+  "the-calling-of-saint-matthew": {
+    "file": "File:Caravaggio_—_The_Calling_of_Saint_Matthew.jpg",
+    "width": 8792,
+    "height": 8304,
+    "src": {
+      "500": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Caravaggio_%E2%80%94_The_Calling_of_Saint_Matthew.jpg/500px-Caravaggio_%E2%80%94_The_Calling_of_Saint_Matthew.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "960": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Caravaggio_%E2%80%94_The_Calling_of_Saint_Matthew.jpg/960px-Caravaggio_%E2%80%94_The_Calling_of_Saint_Matthew.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "1920": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Caravaggio_%E2%80%94_The_Calling_of_Saint_Matthew.jpg/1920px-Caravaggio_%E2%80%94_The_Calling_of_Saint_Matthew.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Caravaggio_%E2%80%94_The_Calling_of_Saint_Matthew.jpg",
+    "palette": [
+      "#1d1b18",
+      "#141312",
+      "#2b2620",
+      "#41372a",
+      "#64553b",
+      "#98815b"
+    ],
+    "artistBio": "Michelangelo Merisi da Caravaggio, known mononymously as Caravaggio, was an Italian painter active in Rome for a significant portion of his artistic life. He began his apprenticeship in Milan in 1584, and during the final four years of his life, he moved between Naples, Malta, and Sicily. His paintings have been characterized by art critics as combining a realistic observation of the human state, both physical and emotional, with a dramatic use of lighting, which had a formative influence on Baroque painting.",
+    "artistUrl": "https://en.wikipedia.org/wiki/Caravaggio"
+  },
+  "composition-vii": {
+    "file": "File:Composition_VII_-_Wassily_Kandinsky,_GAC.jpg",
+    "width": 7015,
+    "height": 4661,
+    "src": {
+      "500": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Composition_VII_-_Wassily_Kandinsky%2C_GAC.jpg/500px-Composition_VII_-_Wassily_Kandinsky%2C_GAC.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "960": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Composition_VII_-_Wassily_Kandinsky%2C_GAC.jpg/960px-Composition_VII_-_Wassily_Kandinsky%2C_GAC.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "1920": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Composition_VII_-_Wassily_Kandinsky%2C_GAC.jpg/1920px-Composition_VII_-_Wassily_Kandinsky%2C_GAC.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Composition_VII_-_Wassily_Kandinsky,_GAC.jpg",
+    "palette": [
+      "#9e9b89",
+      "#8a522b",
+      "#67726d",
+      "#a68d54",
+      "#454046",
+      "#c5c3a7"
+    ],
+    "artistBio": "Wassily Wassilyevich Kandinsky was a Russian painter and art theorist active in Germany during the late Belle Époque and Interwar eras. Kandinsky is generally credited as one of the pioneers of abstraction in Western art. Born in Moscow, he began painting studies at the age of 30.",
+    "artistUrl": "https://en.wikipedia.org/wiki/Wassily_Kandinsky"
+  },
+  "the-swing": {
+    "file": "File:The_Swing_(P430).jpg",
+    "width": 1487,
+    "height": 1920,
+    "src": {
+      "500": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/The_Swing_%28P430%29.jpg/500px-The_Swing_%28P430%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "960": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/The_Swing_%28P430%29.jpg/960px-The_Swing_%28P430%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "1920": "https://upload.wikimedia.org/wikipedia/commons/8/83/The_Swing_%28P430%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+    },
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:The_Swing_(P430).jpg",
+    "palette": [
+      "#35423a",
+      "#141612",
+      "#242b25",
+      "#535f52",
+      "#70827a",
+      "#99a7a1"
+    ],
+    "artistBio": "Jean-Honoré Fragonard was a French painter and printmaker whose late Rococo manner was distinguished by remarkable facility, exuberance, and hedonism. One of the most prolific artists active in the last decades of the Ancien Régime, Fragonard produced more than 550 paintings, of which only five are dated. Among his most popular works are genre paintings conveying an atmosphere of intimacy and veiled eroticism.",
+    "artistUrl": "https://en.wikipedia.org/wiki/Jean-Honor%C3%A9_Fragonard"
+  },
+  "the-raft-of-the-medusa": {
+    "file": "File:JEAN_LOUIS_THÉODORE_GÉRICAULT_-_La_Balsa_de_la_Medusa_(Museo_del_Louvre,_1818-19).jpg",
+    "width": 5872,
+    "height": 4008,
+    "src": {
+      "500": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/JEAN_LOUIS_TH%C3%89ODORE_G%C3%89RICAULT_-_La_Balsa_de_la_Medusa_%28Museo_del_Louvre%2C_1818-19%29.jpg/500px-JEAN_LOUIS_TH%C3%89ODORE_G%C3%89RICAULT_-_La_Balsa_de_la_Medusa_%28Museo_del_Louvre%2C_1818-19%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "960": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/JEAN_LOUIS_TH%C3%89ODORE_G%C3%89RICAULT_-_La_Balsa_de_la_Medusa_%28Museo_del_Louvre%2C_1818-19%29.jpg/960px-JEAN_LOUIS_TH%C3%89ODORE_G%C3%89RICAULT_-_La_Balsa_de_la_Medusa_%28Museo_del_Louvre%2C_1818-19%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "1920": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/JEAN_LOUIS_TH%C3%89ODORE_G%C3%89RICAULT_-_La_Balsa_de_la_Medusa_%28Museo_del_Louvre%2C_1818-19%29.jpg/1920px-JEAN_LOUIS_TH%C3%89ODORE_G%C3%89RICAULT_-_La_Balsa_de_la_Medusa_%28Museo_del_Louvre%2C_1818-19%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:JEAN_LOUIS_TH%C3%89ODORE_G%C3%89RICAULT_-_La_Balsa_de_la_Medusa_(Museo_del_Louvre,_1818-19).jpg",
+    "palette": [
+      "#483828",
+      "#2e221b",
+      "#63523f",
+      "#141110",
+      "#8b735b",
+      "#baa185"
+    ],
+    "artistBio": "Jean-Louis André Théodore Géricault was a French painter and lithographer. His best-known painting is The Raft of the Medusa. Despite his short life, he was one of the pioneers of the Romantic movement.",
+    "artistUrl": "https://en.wikipedia.org/wiki/Th%C3%A9odore_G%C3%A9ricault"
+  },
+  "ophelia": {
+    "file": "File:John_Everett_Millais_-_Ophelia_-_Google_Art_Project.jpg",
+    "width": 7087,
+    "height": 4820,
+    "src": {
+      "500": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/John_Everett_Millais_-_Ophelia_-_Google_Art_Project.jpg/500px-John_Everett_Millais_-_Ophelia_-_Google_Art_Project.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "960": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/John_Everett_Millais_-_Ophelia_-_Google_Art_Project.jpg/960px-John_Everett_Millais_-_Ophelia_-_Google_Art_Project.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "1920": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/John_Everett_Millais_-_Ophelia_-_Google_Art_Project.jpg/1920px-John_Everett_Millais_-_Ophelia_-_Google_Art_Project.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:John_Everett_Millais_-_Ophelia_-_Google_Art_Project.jpg",
+    "palette": [
+      "#3c3f22",
+      "#252318",
+      "#515b24",
+      "#6c663c",
+      "#9a8865",
+      "#fcfcfa"
+    ],
+    "artistBio": "Sir John Everett Millais, 1st Baronet was an English painter and illustrator who was one of the founders of the Pre-Raphaelite Brotherhood. He was a child prodigy who, aged eleven, became the youngest student to enter the Royal Academy Schools. The Pre-Raphaelite Brotherhood was founded at his family home in London, at 83 Gower Street.",
+    "artistUrl": "https://en.wikipedia.org/wiki/John_Everett_Millais"
+  },
+  "bal-du-moulin-de-la-galette": {
+    "file": "File:Renoir,_Pierre-Auguste_-_Dance_at_Le_Moulin_de_la_Galette,_1876.jpg",
+    "width": 40869,
+    "height": 30379,
+    "src": {
+      "500": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Renoir%2C_Pierre-Auguste_-_Dance_at_Le_Moulin_de_la_Galette%2C_1876.jpg/500px-Renoir%2C_Pierre-Auguste_-_Dance_at_Le_Moulin_de_la_Galette%2C_1876.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "960": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Renoir%2C_Pierre-Auguste_-_Dance_at_Le_Moulin_de_la_Galette%2C_1876.jpg/960px-Renoir%2C_Pierre-Auguste_-_Dance_at_Le_Moulin_de_la_Galette%2C_1876.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "1920": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Renoir%2C_Pierre-Auguste_-_Dance_at_Le_Moulin_de_la_Galette%2C_1876.jpg/1920px-Renoir%2C_Pierre-Auguste_-_Dance_at_Le_Moulin_de_la_Galette%2C_1876.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Renoir,_Pierre-Auguste_-_Dance_at_Le_Moulin_de_la_Galette,_1876.jpg",
+    "palette": [
+      "#121a1d",
+      "#273f46",
+      "#555632",
+      "#596f6f",
+      "#8c7e59",
+      "#aca897"
+    ],
+    "artistBio": "Pierre-Auguste Renoir was a leading French Impressionist artist. In his depiction of feminine beauty, Renoir has been described as \"the final representative of a tradition which runs directly from Rubens to Watteau.\"\nHe was the father of the actor Pierre Renoir, the filmmaker Jean Renoir and the ceramic artist Claude Renoir. He was the grandfather of the filmmaker Claude Renoir, son of Pierre.",
+    "artistUrl": "https://en.wikipedia.org/wiki/Pierre-Auguste_Renoir"
+  },
+  "the-card-players": {
+    "file": "File:Les_Joueurs_de_cartes,_par_Paul_Cézanne.jpg",
+    "width": 6048,
+    "height": 4961,
+    "src": {
+      "500": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Les_Joueurs_de_cartes%2C_par_Paul_C%C3%A9zanne.jpg/500px-Les_Joueurs_de_cartes%2C_par_Paul_C%C3%A9zanne.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "960": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Les_Joueurs_de_cartes%2C_par_Paul_C%C3%A9zanne.jpg/960px-Les_Joueurs_de_cartes%2C_par_Paul_C%C3%A9zanne.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "1920": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Les_Joueurs_de_cartes%2C_par_Paul_C%C3%A9zanne.jpg/1920px-Les_Joueurs_de_cartes%2C_par_Paul_C%C3%A9zanne.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Les_Joueurs_de_cartes,_par_Paul_C%C3%A9zanne.jpg",
+    "palette": [
+      "#1e1713",
+      "#3c271a",
+      "#533f2d",
+      "#775f38",
+      "#9e8348",
+      "#82400e"
+    ],
+    "artistBio": "Paul Cézanne was a French Post-Impressionist painter whose work introduced new modes of representation, influenced avant-garde artistic movements of the early 20th century and formed the bridge between late 19th-century Impressionism and early 20th-century Cubism.\nWhile his early works were influenced by Romanticism—such as the murals in the Jas de Bouffan country house—and Realism, Cézanne arrived at a new pictorial language through intense examination of Impressionist forms of expression. He altered conventional approaches to perspective and broke established rules of academic art by emphasizing the underlying structure of objects in a composition and the formal qualities of art.",
+    "artistUrl": "https://en.wikipedia.org/wiki/Paul_C%C3%A9zanne"
+  },
+  "plum-park-in-kameido": {
+    "file": "File:De_pruimenboomgaard_te_Kameido-Rijksmuseum_RP-P-1956-743.jpeg",
+    "width": 2041,
+    "height": 3000,
+    "src": {
+      "500": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/De_pruimenboomgaard_te_Kameido-Rijksmuseum_RP-P-1956-743.jpeg/500px-De_pruimenboomgaard_te_Kameido-Rijksmuseum_RP-P-1956-743.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "960": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/De_pruimenboomgaard_te_Kameido-Rijksmuseum_RP-P-1956-743.jpeg/960px-De_pruimenboomgaard_te_Kameido-Rijksmuseum_RP-P-1956-743.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "1920": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/De_pruimenboomgaard_te_Kameido-Rijksmuseum_RP-P-1956-743.jpeg/1920px-De_pruimenboomgaard_te_Kameido-Rijksmuseum_RP-P-1956-743.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:De_pruimenboomgaard_te_Kameido-Rijksmuseum_RP-P-1956-743.jpeg",
+    "palette": [
+      "#3d5455",
+      "#af574b",
+      "#cebdaa",
+      "#ac9a8a",
+      "#626b67",
+      "#2e3c3f"
+    ],
+    "artistBio": "Utagawa Hiroshige or Andō Hiroshige, born Andō Tokutarō, was a Japanese ukiyo-e artist, considered the last great master of that tradition.\nHiroshige is best known for his horizontal-format landscape series The Fifty-three Stations of the Tōkaidō and for his vertical-format landscape series One Hundred Famous Views of Edo. The subjects of his work were atypical of the ukiyo-e genre, whose typical focus was on beautiful women, popular actors, and other scenes of the urban pleasure districts of Japan's Edo period.",
+    "artistUrl": "https://en.wikipedia.org/wiki/Hiroshige"
+  },
+  "the-sleeping-gypsy": {
+    "file": "File:La_Bohémienne_endormie.jpg",
+    "width": 5411,
+    "height": 3457,
+    "src": {
+      "500": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/La_Boh%C3%A9mienne_endormie.jpg/500px-La_Boh%C3%A9mienne_endormie.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "960": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/La_Boh%C3%A9mienne_endormie.jpg/960px-La_Boh%C3%A9mienne_endormie.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "1920": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/La_Boh%C3%A9mienne_endormie.jpg/1920px-La_Boh%C3%A9mienne_endormie.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:La_Boh%C3%A9mienne_endormie.jpg",
+    "palette": [
+      "#393024",
+      "#35708d",
+      "#766b55",
+      "#5696ad",
+      "#275166",
+      "#a4a28d"
+    ],
+    "artistBio": "Henri Julien Félix Rousseau was a French post-Impressionist painter in the Naïve or Primitive manner. He was also known as Le Douanier, a humorous description of his occupation as a toll and tax collector. He started painting seriously in his early forties; by age 49, he retired from his job to work on his art full-time.",
+    "artistUrl": "https://en.wikipedia.org/wiki/Henri_Rousseau"
+  },
+  "the-lady-of-shalott": {
+    "file": "File:John_William_Waterhouse_-_The_Lady_of_Shalott_-_Google_Art_Project_edit.jpg",
+    "width": 4180,
+    "height": 3208,
+    "src": {
+      "500": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/John_William_Waterhouse_-_The_Lady_of_Shalott_-_Google_Art_Project_edit.jpg/500px-John_William_Waterhouse_-_The_Lady_of_Shalott_-_Google_Art_Project_edit.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "960": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/John_William_Waterhouse_-_The_Lady_of_Shalott_-_Google_Art_Project_edit.jpg/960px-John_William_Waterhouse_-_The_Lady_of_Shalott_-_Google_Art_Project_edit.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "1920": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/John_William_Waterhouse_-_The_Lady_of_Shalott_-_Google_Art_Project_edit.jpg/1920px-John_William_Waterhouse_-_The_Lady_of_Shalott_-_Google_Art_Project_edit.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:John_William_Waterhouse_-_The_Lady_of_Shalott_-_Google_Art_Project_edit.jpg",
+    "palette": [
+      "#2a2722",
+      "#4b3a32",
+      "#71503d",
+      "#0e0e0a",
+      "#9b724c",
+      "#cdb29c"
+    ],
+    "artistBio": "John William Waterhouse was an English painter known for working first in the Academic style and for then embracing the Pre-Raphaelite Brotherhood's style and subject matter. His paintings are known for their depictions of women from ancient Greek mythology, Arthurian legend, and the works of William Shakespeare. A high proportion depict a single young and beautiful woman in a historical costume and setting, though there are some ventures into Orientalist painting and genre painting, still mostly featuring women.",
+    "artistUrl": "https://en.wikipedia.org/wiki/John_William_Waterhouse"
+  },
+  "the-tempest-giorgione": {
+    "file": "File:Giorgione_-_Das_Gewitter.jpg",
+    "width": 3329,
+    "height": 3696,
+    "src": {
+      "500": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Giorgione_-_Das_Gewitter.jpg/500px-Giorgione_-_Das_Gewitter.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "960": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Giorgione_-_Das_Gewitter.jpg/960px-Giorgione_-_Das_Gewitter.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "1920": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Giorgione_-_Das_Gewitter.jpg/1920px-Giorgione_-_Das_Gewitter.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Giorgione_-_Das_Gewitter.jpg",
+    "palette": [
+      "#433c20",
+      "#292e17",
+      "#624b2c",
+      "#566658",
+      "#84674a",
+      "#918876"
+    ],
+    "artistBio": "Giorgio Barbarelli da Castelfranco, known as Giorgione, was an Italian painter of the Venetian school during the High Renaissance, who died in his thirties. He is known for the elusive poetic quality of his work, though only about six surviving paintings are firmly attributed to him. The uncertainty surrounding the identity and meaning of his work has made Giorgione one of the most mysterious figures in European art.",
+    "artistUrl": "https://en.wikipedia.org/wiki/Giorgione"
+  }
+}
