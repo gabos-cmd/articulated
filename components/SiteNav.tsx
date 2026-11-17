@@ -2,69 +2,60 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useEffect, useState } from "react";
 
-type SiteNavProps = {
-  variant?: "overlay" | "page";
-};
+import { Brandmark } from "@/components/illustrations";
 
-const navLinks = [
-  {
-    href: "/favorites",
-    label: "Favorites"
-  },
-  {
-    href: "/about",
-    label: "About"
-  }
+const links = [
+  { href: "/", label: "Today" },
+  { href: "/archive", label: "Archive" },
+  { href: "/collection", label: "Collection" },
+  { href: "/journal", label: "Journal" }
 ];
 
-export function SiteNav({ variant = "page" }: SiteNavProps) {
+export function SiteNav() {
   const pathname = usePathname();
-  const isOverlay = variant === "overlay";
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 24);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  const isActive = (href: string) =>
+    href === "/" ? pathname === "/" || pathname.startsWith("/day/") : pathname.startsWith(href);
 
   return (
-    <header
-      className={`relative z-30 flex items-center justify-between ${
-        isOverlay
-          ? "rounded-[1.75rem] border border-white/40 bg-white/[0.16] px-5 py-4 backdrop-blur-[18px] shadow-[0_18px_55px_rgba(17,17,17,0.09)] sm:px-6"
-          : "border-b border-line/80 py-6"
-      }`}
-    >
-      <Link
-        className="inline-flex items-center transition duration-200 hover:opacity-75"
-        href="/"
+    <header className="pointer-events-none fixed inset-x-0 top-0 z-50 px-3 pt-[max(0.75rem,env(safe-area-inset-top))] sm:px-6">
+      <div
+        className={`glass pointer-events-auto mx-auto flex max-w-[1180px] items-center justify-between gap-2 rounded-full py-1.5 pl-2 pr-1.5 transition-[box-shadow,background-color] duration-300 sm:pl-3 ${
+          scrolled ? "" : "shadow-none!"
+        }`}
       >
-        <img
-          alt="Articulated"
-          className="block h-auto w-[134px] sm:w-[158px]"
-          height={394}
-          src="/Logo.png"
-          width={1511}
-        />
-      </Link>
-      <nav className="flex items-center gap-2 sm:gap-3">
-        {navLinks.map((link) => {
-          const active = pathname === link.href;
-
-          return (
-            <Link
-              key={link.href}
-              className={`rounded-full px-4 py-2 text-sm font-medium transition duration-200 ${
-                active
-                  ? isOverlay
-                    ? "bg-black text-white shadow-[0_10px_24px_rgba(17,17,17,0.2)]"
-                    : "bg-black text-white"
-                  : isOverlay
-                    ? "bg-white/55 text-foreground hover:bg-white/75"
-                    : "text-muted hover:bg-black/[0.04] hover:text-foreground"
-              }`}
-              href={link.href}
-            >
-              {link.label}
-            </Link>
-          );
-        })}
-      </nav>
+        <Link href="/" className="flex shrink-0 items-center gap-2 rounded-full pr-2 transition-opacity hover:opacity-80" aria-label="Articulated, home">
+          <Brandmark className="h-8 w-8" />
+          <span className="display hidden text-[1.35rem] leading-none tracking-[-0.03em] sm:inline">Articulated</span>
+        </Link>
+        <nav className="scrollbar-none flex items-center gap-0.5 overflow-x-auto">
+          {links.map((l) => {
+            const active = isActive(l.href);
+            return (
+              <Link
+                key={l.href}
+                href={l.href}
+                aria-current={active ? "page" : undefined}
+                className={`relative whitespace-nowrap rounded-full px-3 py-2 text-[0.8125rem] font-medium transition-colors sm:px-4 ${
+                  active ? "bg-ink text-cream shadow-[0_6px_16px_-8px_rgb(42_37_32/0.7)]" : "text-ink-2 hover:bg-white/60 hover:text-ink"
+                }`}
+              >
+                {l.label}
+              </Link>
+            );
+          })}
+        </nav>
+      </div>
     </header>
   );
 }
