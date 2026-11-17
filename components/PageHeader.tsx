@@ -21,8 +21,8 @@ export function PageHeader({
       >
         <div aria-hidden className="absolute -right-24 -top-24 -z-10 h-80 w-80 rounded-full opacity-60 blur-3xl" style={{ background: tint }} />
         <div className="rise max-w-2xl">
-          <p className="eyebrow text-ink-2">{eyebrow}</p>
-          <h1 className="display mt-4 text-[3.2rem] sm:text-[5rem]">{title}</h1>
+          <p className="hand text-[1.4rem] leading-none text-ink-2">{eyebrow}</p>
+          <h1 className="display mt-4 text-[3.6rem] text-black sm:text-[5.75rem]">{title}</h1>
           <div className="mt-5 max-w-xl text-[1.0625rem] leading-relaxed text-ink-2">{intro}</div>
         </div>
         {art && <div className="rise shrink-0 self-end" style={{ "--d": "150ms" } as React.CSSProperties}>{art}</div>}

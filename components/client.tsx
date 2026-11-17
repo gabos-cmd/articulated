@@ -64,7 +64,7 @@ export function VisitTracker({ dateKey, slug }: { dateKey: string; slug: string 
   return null;
 }
 
-export function CopySwatch({ hex }: { hex: string }) {
+export function CopySwatch({ hex, className = "text-ink-2 hover:text-ink" }: { hex: string; className?: string }) {
   const [copied, setCopied] = useState(false);
   return (
     <button
@@ -76,7 +76,7 @@ export function CopySwatch({ hex }: { hex: string }) {
           setTimeout(() => setCopied(false), 1200);
         } catch {}
       }}
-      className="font-mono text-[0.6875rem] uppercase tracking-wider text-ink-2 hover:text-ink"
+      className={`font-mono text-[0.6875rem] uppercase tracking-wider ${className}`}
       title="Copy colour"
     >
       {copied ? "copied" : hex}

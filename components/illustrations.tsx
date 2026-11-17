@@ -73,49 +73,88 @@ function Tree({ x, y, scale = 1, color, seed }: { x: number; y: number; scale?: 
   );
 }
 
-/** Wide landscape used at the foot of every page */
-export function Landscape({ className, ...props }: SVGProps<SVGSVGElement>) {
-  const id = "land";
-  const cream = "#fbf3e2";
-  const blue = "#5f8fd0";
-  const orange = "#ef7d4f";
-  const green = "#9db06e";
+function Cypress({ x, y, h, w, color, seed }: { x: number; y: number; h: number; w: number; color: string; seed: number }) {
+  const rand = rng(seed);
+  const lean = (rand() - 0.5) * 10;
   return (
-    <svg viewBox="0 0 1440 560" preserveAspectRatio="xMidYMax slice" className={className} aria-hidden="true" {...props}>
+    <path
+      fill={color}
+      d={`M${x - w / 2} ${y} C ${x - w * 0.62} ${y - h * 0.35}, ${x - w * 0.35} ${y - h * 0.75}, ${x + lean} ${y - h} C ${x + w * 0.35} ${y - h * 0.75}, ${x + w * 0.62} ${y - h * 0.35}, ${x + w / 2} ${y} Z`}
+    />
+  );
+}
+
+function Temple({ x, y, s = 1, color }: { x: number; y: number; s?: number; color: string }) {
+  const cols = [0, 1, 2, 3, 4, 5];
+  return (
+    <g transform={`translate(${x} ${y}) scale(${s})`} fill={color}>
+      <path d="M-70 -78 L0 -112 L70 -78 Z" />
+      <rect x="-74" y="-78" width="148" height="10" />
+      {cols.map((i) => (
+        <rect key={i} x={-62 + i * 23} y="-66" width="10" height="56" rx="1" />
+      ))}
+      <rect x="-78" y="-10" width="156" height="6" />
+      <rect x="-86" y="-4" width="172" height="6" />
+    </g>
+  );
+}
+
+/** Night landscape at the foot of every page: the next edition arrives at midnight */
+export function Nocturne({ className }: { className?: string }) {
+  const id = "noct";
+  const rand = rng(5);
+  const stars = Array.from({ length: 70 }, () => ({
+    x: Math.round(rand() * 1440),
+    y: Math.round(rand() * 250),
+    r: Math.round((0.6 + rand() * 1.6) * 10) / 10,
+    o: Math.round((0.35 + rand() * 0.6) * 100) / 100
+  }));
+  return (
+    <svg viewBox="0 0 1440 520" preserveAspectRatio="xMidYMax slice" className={className} aria-hidden="true">
       <InkFilters id={id} />
-      {/* clouds */}
-      <g filter={`url(#${id}-rough)`} fill={cream}>
-        <path d="M160 92 C 230 70, 330 78, 390 108 C 330 100, 240 96, 160 104 Z" />
-        <ellipse cx="420" cy="196" rx="44" ry="10" />
-        <path d="M-40 250 C 0 200, 70 200, 110 222 C 140 168, 260 150, 310 196 C 350 176, 420 186, 430 228 C 470 222, 520 240, 512 268 L 600 268 C 640 250, 700 262, 700 290 L 760 296 L 760 470 L -40 470 Z" />
-        <path d="M620 300 C 640 270, 720 262, 760 284 C 790 230, 880 222, 910 270 C 960 240, 1040 250, 1060 290 C 1120 270, 1200 280, 1220 310 C 1280 300, 1380 300, 1480 330 L 1480 470 L 620 470 Z" />
-        <path d="M820 202 C 850 180, 880 178, 910 190 C 880 192, 850 200, 830 214 Z" />
+      <g fill="#fbf3e2">
+        {stars.map((st, i) => (
+          <circle key={i} cx={st.x} cy={st.y} r={st.r} opacity={st.o} />
+        ))}
       </g>
-      {/* sky streaks cut through the clouds */}
-      <g filter={`url(#${id}-rough)`} fill="#79a6dc">
-        <path d="M190 330 C 300 318, 420 322, 520 330 C 420 336, 300 338, 190 342 Z" />
-        <path d="M760 352 C 860 344, 960 344, 1020 350 C 950 356, 860 360, 760 362 Z" />
-        <path d="M430 372 C 470 366, 520 368, 560 374 C 520 378, 470 380, 430 380 Z" />
-      </g>
-      {/* hedgerow */}
-      <g filter={`url(#${id}-leafy)`}>
-        <Shrubs x0={-20} x1={420} y={470} r={11} seed={3} color={orange} />
-        <Shrubs x0={560} x1={1460} y={462} r={17} seed={11} color={orange} />
-        <Shrubs x0={1080} x1={1460} y={440} r={22} seed={17} color={orange} />
-      </g>
-      <g filter={`url(#${id}-leafy)`}>
-        <Tree x={250} y={472} scale={1.25} color={blue} seed={21} />
-      </g>
-      {/* field */}
+      {/* moon with a halo of swirls */}
       <g filter={`url(#${id}-rough)`}>
-        <path d="M-40 478 C 300 456, 700 470, 1000 462 C 1200 456, 1360 448, 1480 444 L 1480 600 L -40 600 Z" fill={green} />
-        <g fill={cream} opacity="0.9">
-          <path d="M-40 512 C 80 500, 180 498, 260 502 C 170 506, 80 512, -40 524 Z" />
-          <path d="M520 498 C 700 486, 860 486, 980 492 C 850 498, 700 506, 520 512 Z" />
-          <path d="M760 540 C 960 512, 1180 498, 1480 488 L 1480 498 C 1200 512, 980 532, 800 556 Z" />
-          <path d="M1040 520 C 1200 506, 1320 502, 1480 506 L 1480 514 C 1320 514, 1200 520, 1060 530 Z" />
-          <path d="M300 548 C 420 534, 520 530, 640 532 C 540 540, 420 548, 300 560 Z" />
+        <g transform="translate(-420 90)">
+          <circle cx="1130" cy="120" r="78" fill="none" stroke="#e9b949" strokeWidth="5" opacity="0.35" />
+          <circle cx="1130" cy="120" r="104" fill="none" stroke="#e9b949" strokeWidth="3" opacity="0.18" />
+          <path d="M1158 66 A 56 56 0 1 0 1176 160 A 46 46 0 1 1 1158 66 Z" fill="#e9b949" />
         </g>
+        <path d="M120 160 C 260 120, 420 150, 560 128 C 460 160, 300 150, 130 176 Z" fill="#3150d0" opacity="0.55" />
+        <path d="M620 92 C 720 70, 820 84, 900 74 C 830 96, 720 96, 630 106 Z" fill="#3150d0" opacity="0.45" />
+      </g>
+      {/* far hills */}
+      <g filter={`url(#${id}-rough)`}>
+        <path d="M-40 320 C 80 250, 200 240, 320 290 C 420 330, 520 270, 640 286 C 780 300, 860 240, 1000 250 C 1140 262, 1220 300, 1320 280 C 1400 266, 1440 270, 1480 276 L1480 560 L-40 560 Z" fill="#3150d0" />
+        <path d="M-40 390 C 140 360, 300 380, 460 366 C 620 352, 760 360, 860 330 C 930 300, 1010 282, 1090 300 C 1200 330, 1320 370, 1480 362 L1480 560 L-40 560 Z" fill="#79a6dc" />
+      </g>
+      {/* temple on the hill */}
+      <g filter={`url(#${id}-rough)`}>
+        <Temple x={980} y={296} s={0.62} color="#fbf3e2" />
+      </g>
+      {/* river with moonlight */}
+      <g filter={`url(#${id}-rough)`}>
+        <path d="M-40 430 C 300 404, 700 420, 1000 404 C 1200 394, 1360 400, 1480 396 L1480 446 C 1200 450, 900 470, 500 462 C 300 458, 120 466, -40 470 Z" fill="#1d2a6b" />
+        <g fill="#e9b949" opacity="0.85">
+          <path d="M650 414 h70 v4 h-70 z" />
+          <path d="M670 426 h44 v4 h-44 z" />
+          <path d="M640 438 h86 v4 h-86 z" />
+        </g>
+      </g>
+      {/* near bank */}
+      <g filter={`url(#${id}-rough)`}>
+        <path d="M-40 466 C 200 450, 520 468, 800 458 C 1060 450, 1260 470, 1480 456 L1480 560 L-40 560 Z" fill="#8da867" />
+        <path d="M-40 500 C 300 486, 640 506, 960 494 C 1180 486, 1340 496, 1480 490 L1480 560 L-40 560 Z" fill="#e2714a" />
+      </g>
+      <g filter={`url(#${id}-leafy)`}>
+        <Cypress x={150} y={476} h={210} w={50} color="#14321f" seed={2} />
+        <Cypress x={205} y={480} h={150} w={38} color="#1d4029" seed={3} />
+        <Cypress x={1300} y={470} h={170} w={42} color="#14321f" seed={4} />
+        <Cypress x={1350} y={472} h={120} w={32} color="#1d4029" seed={6} />
       </g>
     </svg>
   );
@@ -231,15 +270,44 @@ export function SpotFrame({ className, fill = "var(--color-terracotta)" }: SpotP
   );
 }
 
-/** Brandmark: an italic A set inside a riso dab */
-export function Brandmark({ className }: { className?: string }) {
+/** Brandmark: a round painter's palette with colours swirling into each other */
+export function PaletteMark({ className, id = "pm" }: { className?: string; id?: string }) {
+  const blobs = [
+    { cx: 15, cy: 17, r: 17, c: "#3150d0" },
+    { cx: 50, cy: 14, r: 16, c: "#e2714a" },
+    { cx: 53, cy: 46, r: 17, c: "#eba2b6" },
+    { cx: 22, cy: 54, r: 14, c: "#8da867" },
+    { cx: 34, cy: 33, r: 11, c: "#79a6dc" },
+    { cx: 32, cy: 4, r: 11, c: "#e9b949" },
+    { cx: 4, cy: 38, r: 9, c: "#e9b949" }
+  ];
   return (
-    <svg viewBox="0 0 40 40" className={className} aria-hidden="true">
-      <circle cx="21.5" cy="21.5" r="16" fill="var(--color-ochre)" />
-      <circle cx="19" cy="19" r="16" fill="none" stroke={ink} strokeWidth="1.4" />
-      <text x="19.5" y="26.5" textAnchor="middle" fontFamily="var(--font-newsreader), Georgia, serif" fontStyle="italic" fontSize="21" fill={ink}>
-        A
-      </text>
+    <svg viewBox="0 0 64 64" className={className} aria-hidden="true">
+      <defs>
+        <clipPath id={`${id}-clip`}>
+          <circle cx="32" cy="32" r="30" />
+        </clipPath>
+        <filter id={`${id}-mix`} x="-20%" y="-20%" width="140%" height="140%">
+          <feGaussianBlur in="SourceGraphic" stdDeviation="2.4" result="soft" />
+          <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="2" seed="11" result="swirl" />
+          <feDisplacementMap in="soft" in2="swirl" scale="20" xChannelSelector="R" yChannelSelector="G" />
+        </filter>
+        <radialGradient id={`${id}-shine`} cx="0.3" cy="0.25" r="0.6">
+          <stop offset="0" stopColor="#fff" stopOpacity="0.55" />
+          <stop offset="1" stopColor="#fff" stopOpacity="0" />
+        </radialGradient>
+      </defs>
+      <g clipPath={`url(#${id}-clip)`}>
+        <rect width="64" height="64" fill="#e9b949" />
+        <g filter={`url(#${id}-mix)`}>
+          {blobs.map((b, i) => (
+            <circle key={i} cx={b.cx} cy={b.cy} r={b.r} fill={b.c} />
+          ))}
+        </g>
+        <rect width="64" height="64" fill={`url(#${id}-shine)`} />
+        <circle cx="21" cy="45" r="5.2" fill="#fff" stroke="#111" strokeWidth="1.3" />
+      </g>
+      <circle cx="32" cy="32" r="30" fill="none" stroke="#111" strokeWidth="1.6" />
     </svg>
   );
 }

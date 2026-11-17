@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Caveat, Instrument_Sans, Newsreader } from "next/font/google";
+import { Caveat, Instrument_Sans, Instrument_Serif, Newsreader } from "next/font/google";
 
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteNav } from "@/components/SiteNav";
@@ -11,6 +11,14 @@ const newsreader = Newsreader({
   style: ["normal", "italic"],
   axes: ["opsz"],
   variable: "--font-newsreader",
+  display: "swap"
+});
+
+const instrumentSerif = Instrument_Serif({
+  subsets: ["latin"],
+  weight: "400",
+  style: ["normal", "italic"],
+  variable: "--font-instrument-serif",
   display: "swap"
 });
 
@@ -49,7 +57,7 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className={`${newsreader.variable} ${instrument.variable} ${caveat.variable}`}>
+    <html lang="en" className={`${newsreader.variable} ${instrumentSerif.variable} ${instrument.variable} ${caveat.variable}`}>
       <body className="min-h-dvh overflow-x-clip">
         <SiteNav />
         {children}

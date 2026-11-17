@@ -4,6 +4,7 @@ import { useSyncExternalStore } from "react";
 
 /** Everything the reader does lives in their browser. */
 export type JournalState = {
+  profile: { name: string; since: string | null };
   saved: string[];
   /** dateKey -> slug seen that day */
   visits: Record<string, string>;
@@ -13,7 +14,7 @@ export type JournalState = {
 
 const KEY = "articulated:journal:v2";
 const LEGACY_KEY = "articulated-favorites";
-const EMPTY: JournalState = { saved: [], visits: {}, quizzes: {} };
+const EMPTY: JournalState = { profile: { name: "", since: null }, saved: [], visits: {}, quizzes: {} };
 
 let cache: JournalState | null = null;
 const listeners = new Set<() => void>();
@@ -23,7 +24,8 @@ function read(): JournalState {
   try {
     const raw = window.localStorage.getItem(KEY);
     if (raw) {
-      cache = { ...EMPTY, ...(JSON.parse(raw) as JournalState) };
+      const parsed = JSON.parse(raw) as Partial<JournalState>;
+      cache = { ...EMPTY, ...parsed, profile: { ...EMPTY.profile, ...(parsed.profile ?? {}) } };
     } else {
       // migrate favourites from the first version of the app
       const legacy = window.localStorage.getItem(LEGACY_KEY);
@@ -80,6 +82,31 @@ export const journal = {
   recordQuiz(slug: string, answers: number[], correct: number, total: number) {
     const s = read();
     write({ ...s, quizzes: { ...s.quizzes, [slug]: { answers, correct, total } } });
+  },
+  setName(name: string) {
+    const s = read();
+    write({ ...s, profile: { name: name.slice(0, 40), since: s.profile.since ?? new Date().toISOString().slice(0, 10) } });
+  },
+  export(): string {
+    return JSON.stringify({ app: "articulated", version: 2, exportedAt: new Date().toISOString(), journal: read() }, null, 2);
+  },
+  /** returns false when the file isn't an Articulated journal */
+  import(text: string): boolean {
+    try {
+      const parsed = JSON.parse(text) as { app?: string; journal?: Partial<JournalState> };
+      if (parsed.app !== "articulated" || !parsed.journal) return false;
+      const j = parsed.journal;
+      const cur = read();
+      write({
+        profile: j.profile?.name ? j.profile : cur.profile,
+        saved: [...new Set([...(j.saved ?? []), ...cur.saved])],
+        visits: { ...(j.visits ?? {}), ...cur.visits },
+        quizzes: { ...(j.quizzes ?? {}), ...cur.quizzes }
+      });
+      return true;
+    } catch {
+      return false;
+    }
   },
   reset() {
     write(EMPTY);
