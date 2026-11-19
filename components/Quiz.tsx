@@ -41,7 +41,7 @@ export function Quiz({ slug, questions }: { slug: string; questions: QuizItem[] 
             <legend className="sr-only">Question {qi + 1}</legend>
             <div className="relative flex items-baseline gap-3">
               <span className="numeral text-2xl text-ink-3">{qi + 1}.</span>
-              <p className="display text-[1.6rem] leading-tight text-black sm:text-[1.9rem]">{q.question}</p>
+              <p className="prose-serif text-[1.3rem] font-medium leading-snug text-black sm:text-[1.45rem]">{q.question}</p>
             </div>
             <div className="relative mt-5 grid gap-2 sm:grid-cols-2">
               {q.options.map((opt, oi) => {

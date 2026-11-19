@@ -34,7 +34,7 @@ export default function AboutPage() {
           {how.map((h, i) => (
             <div key={h.t} className="rounded-[1.5rem] p-6" style={{ background: `color-mix(in oklab, ${h.tint} 30%, var(--color-card))` }}>
               <span className="numeral text-3xl text-ink-3">{i + 1}.</span>
-              <h2 className="display mt-3 text-[1.5rem]">{h.t}</h2>
+              <h2 className="display display-sm mt-3 text-[1.25rem]">{h.t}</h2>
               <p className="mt-2 text-[0.9375rem] leading-relaxed text-ink-2">{h.d}</p>
             </div>
           ))}
@@ -64,7 +64,7 @@ export default function AboutPage() {
         <section className="mx-auto grid max-w-3xl gap-8 pt-24 sm:grid-cols-[auto_1fr]">
           <SpotLaurel className="h-24 w-24" />
           <div className="text-[0.9375rem] leading-relaxed text-ink-2">
-            <h2 className="display text-[1.75rem] text-ink">Sources & credits</h2>
+            <h2 className="display text-[1.45rem] text-ink">Sources & credits</h2>
             <p className="mt-3">
               The collection holds {artworks.length} works, all in the public domain. Images come from{" "}
               <a className="link-underline" href="https://commons.wikimedia.org" target="_blank" rel="noreferrer">

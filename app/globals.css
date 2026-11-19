@@ -4,7 +4,7 @@
 /* Tokens                                                              */
 /* ------------------------------------------------------------------ */
 @theme {
-  --font-display: var(--font-instrument-serif), "Iowan Old Style", Georgia, serif;
+  --font-display: var(--font-young-serif), "Iowan Old Style", Georgia, serif;
   --font-text: var(--font-newsreader), "Iowan Old Style", Georgia, serif;
   --font-sans: var(--font-instrument), ui-sans-serif, system-ui, sans-serif;
   --font-hand: var(--font-caveat), "Bradley Hand", cursive;
@@ -76,11 +76,31 @@ body::after {
 /* ------------------------------------------------------------------ */
 /* Type                                                                */
 /* ------------------------------------------------------------------ */
+/* Young Serif: one weight, no italic, wide and sturdy.
+   Large sizes get tighter tracking and leading; italics borrow Newsreader. */
 .display {
   font-family: var(--font-display);
   font-weight: 400;
+  letter-spacing: -0.022em;
+  line-height: 1.06;
+  font-kerning: normal;
+  font-feature-settings: "kern", "liga";
+  text-wrap: balance;
+}
+.display em,
+.display i,
+.display .it {
+  font-family: var(--font-text);
+  font-style: italic;
+  font-weight: 450;
+  font-size: 1.07em;
   letter-spacing: -0.012em;
-  line-height: 0.98;
+  font-optical-sizing: auto;
+}
+/* small titles: cards, tiles, labels */
+.display-sm {
+  letter-spacing: -0.008em;
+  line-height: 1.18;
 }
 
 /* small sentence-case label (no shouty caps) */
@@ -113,7 +133,7 @@ body::after {
 }
 
 .numeral {
-  font-family: var(--font-display);
+  font-family: var(--font-text);
   font-style: italic;
   font-feature-settings: "lnum";
 }

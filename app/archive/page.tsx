@@ -37,7 +37,7 @@ export default function ArchivePage() {
       <div className="mx-auto max-w-[1180px] px-5 sm:px-10">
         {[...months.entries()].map(([month, list]) => (
           <section key={month} className="pt-20">
-            <h2 className="display flex items-center gap-4 text-[2rem] sm:text-[2.5rem]">
+            <h2 className="display flex items-center gap-4 text-[1.7rem] sm:text-[2.1rem]">
               {month}
               <span className="h-px flex-1 bg-ink/15" />
             </h2>
