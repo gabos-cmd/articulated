@@ -58,7 +58,7 @@ export function SiteNav() {
         {/* centre: wordmark */}
         <Link href="/" className="flex items-center gap-2 px-2 transition-opacity hover:opacity-80" aria-label="Articulated, today's edition">
           <PaletteMark id="nav-mark" className="h-7 w-7" />
-          <span className="display text-[1.65rem] leading-none tracking-[-0.02em] text-black">Articulated</span>
+          <span className="display text-[1.32rem] leading-none tracking-[-0.03em] text-black">Articulated</span>
         </Link>
 
         {/* right */}

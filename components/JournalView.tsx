@@ -37,14 +37,14 @@ export function JournalView({ todayKey, total, titles, tiles }: Props) {
         <section className="grid grid-cols-2 gap-3 pt-12 md:grid-cols-4">
           {stats.map((s) => (
             <div key={s.label} className="rounded-[1.5rem] p-5 sm:p-6" style={{ background: `color-mix(in oklab, ${s.tint} 30%, var(--color-card))` }}>
-              <p className="display text-[2.75rem] leading-none sm:text-[3.5rem]">{s.value}</p>
+              <p className="display text-[2.3rem] leading-none sm:text-[2.9rem]">{s.value}</p>
               <p className="mt-2 text-[0.8125rem] text-ink-2">{s.label}</p>
             </div>
           ))}
         </section>
 
         <section className="pt-20">
-          <h2 className="display flex items-center gap-4 text-[2rem] sm:text-[2.5rem]">
+          <h2 className="display flex items-center gap-4 text-[1.7rem] sm:text-[2.1rem]">
             Saved works <span className="h-px flex-1 bg-ink/15" />
           </h2>
           {hydrated && saved.length === 0 ? (
@@ -62,7 +62,7 @@ export function JournalView({ todayKey, total, titles, tiles }: Props) {
         </section>
 
         <section className="pt-20">
-          <h2 className="display flex items-center gap-4 text-[2rem] sm:text-[2.5rem]">
+          <h2 className="display flex items-center gap-4 text-[1.7rem] sm:text-[2.1rem]">
             Your days <span className="h-px flex-1 bg-ink/15" />
           </h2>
           {hydrated && visits.length === 0 ? (
@@ -80,7 +80,7 @@ export function JournalView({ todayKey, total, titles, tiles }: Props) {
                         {new Date(`${key}T00:00:00Z`).toLocaleDateString("en-GB", { day: "numeric", month: "short", timeZone: "UTC" })}
                       </span>
                       <span className="min-w-0 flex-1">
-                        <span className="display text-[1.25rem] group-hover:underline group-hover:underline-offset-4">{t.title}</span>
+                        <span className="display display-sm text-[1.08rem] group-hover:underline group-hover:underline-offset-4">{t.title}</span>
                         <span className="ml-2 text-sm text-ink-3">{t.artist}</span>
                       </span>
                       <span className="shrink-0 text-sm text-ink-3">{q ? `${q.correct}/${q.total}` : "no quiz"}</span>

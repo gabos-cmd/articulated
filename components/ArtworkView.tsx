@@ -77,7 +77,7 @@ export function ArtworkView({ artwork, meta, path }: { artwork: Artwork; meta: E
                 <PaletteDabs colors={media.palette} className="mt-9 md:mt-auto" />
 
                 <div className="mt-8 md:mt-auto">
-                  <h1 className="display text-balance text-[3rem] text-black sm:text-[3.9rem] lg:text-[4.5rem]">{artwork.title}</h1>
+                  <h1 className="display text-[2.5rem] leading-[1.02] tracking-[-0.03em] text-black sm:text-[3.1rem] lg:text-[3.55rem]">{artwork.title}</h1>
                   <p className="prose-serif mt-3 text-[1.2rem] italic text-ink-2">
                     {artwork.artist}, {artwork.date}
                   </p>
@@ -128,7 +128,7 @@ export function ArtworkView({ artwork, meta, path }: { artwork: Artwork; meta: E
           </div>
           <aside className="space-y-4 lg:pt-6">
             <div className="rounded-sm border border-black/10 bg-white p-6 shadow-[0_18px_40px_-24px_rgb(42_37_32/0.35)]">
-              <p className="display text-[1.5rem] leading-tight text-black">{artwork.artist}</p>
+              <p className="display display-sm text-[1.25rem] text-black">{artwork.artist}</p>
               <p className="text-sm text-ink-2">
                 {artwork.artistOrigin}, {artwork.artistLife}
               </p>
@@ -195,7 +195,7 @@ export function ArtworkView({ artwork, meta, path }: { artwork: Artwork; meta: E
 
           <div className="mt-4 flex flex-col gap-6 rounded-[1.5rem] bg-black p-6 text-cream sm:flex-row sm:items-center sm:justify-between sm:p-8">
             <div>
-              <p className="display text-[2rem] text-white">The palette</p>
+              <p className="display text-[1.65rem] text-white">The palette</p>
               <p className="mt-1 max-w-sm text-[0.9375rem] text-cream/65">
                 The six colours that cover the most of the picture, sampled from the image. Tap one to copy it.
               </p>
@@ -241,7 +241,7 @@ export function ArtworkView({ artwork, meta, path }: { artwork: Artwork; meta: E
             {artwork.quote && (
               <figure className="flex flex-col justify-between rounded-[1.75rem] bg-black p-7 text-white sm:p-10">
                 <span className="display text-[5.5rem] leading-[0.6] text-ochre">“</span>
-                <blockquote className="display mt-2 text-[1.9rem] italic leading-[1.15] sm:text-[2.3rem]">{artwork.quote.text}</blockquote>
+                <blockquote className="prose-serif mt-2 text-[1.75rem] italic leading-[1.25] sm:text-[2.1rem]">{artwork.quote.text}</blockquote>
                 <figcaption className="hand mt-6 text-xl text-white/65">— {artwork.quote.source}</figcaption>
               </figure>
             )}
@@ -274,7 +274,7 @@ export function ArtworkView({ artwork, meta, path }: { artwork: Artwork; meta: E
 
           <div className="mt-4 rounded-[1.5rem] border border-black/[0.07] bg-white px-5 pb-6 pt-6 sm:px-8">
             <div className="flex flex-wrap items-baseline justify-between gap-2">
-              <p className="display text-[1.6rem] text-black">Where it sits in time</p>
+              <p className="display text-[1.35rem] text-black">Where it sits in time</p>
               <p className="text-[0.8125rem] text-ink-3">Each dot is a work in the collection, coloured by movement.</p>
             </div>
             <div className="scrollbar-none -mx-2 mt-2 overflow-x-auto px-2">
@@ -299,7 +299,7 @@ export function ArtworkView({ artwork, meta, path }: { artwork: Artwork; meta: E
           <div className="grid grid-cols-[minmax(0,1fr)] gap-4 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.6fr)]">
             <div className="rounded-[1.5rem] p-6 sm:p-8" style={{ background: `color-mix(in oklab, ${artwork.movementInfo.color} 24%, white)` }}>
               <p className="hand text-xl leading-none text-ink-2">{artwork.movementInfo.span}</p>
-              <p className="display mt-2 text-[2.4rem] leading-none text-black">{artwork.movementInfo.name}</p>
+              <p className="display mt-2 text-[1.95rem] leading-[1.05] text-black">{artwork.movementInfo.name}</p>
               <p className="mt-4 text-[1rem] leading-relaxed text-ink-2">{artwork.movementInfo.blurb}</p>
             </div>
             <div className="rounded-[1.5rem] border border-black/[0.07] bg-white px-5 py-6 sm:px-8">

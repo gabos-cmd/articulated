@@ -44,7 +44,7 @@ export function SiteFooter() {
         <div className="mx-auto flex max-w-[1180px] flex-wrap items-center justify-between gap-4 px-6 py-6 sm:px-10">
           <Link href="/" className="flex items-center gap-2.5">
             <PaletteMark id="foot-mark" className="h-8 w-8" />
-            <span className="display text-[1.75rem] leading-none text-white">Articulated</span>
+            <span className="display text-[1.4rem] leading-none tracking-[-0.03em] text-white">Articulated</span>
           </Link>
           <p className="text-[0.8125rem] text-cream/55">
             © {new Date().getFullYear()} · made slowly by Gabriel · images public domain via{" "}

@@ -37,13 +37,13 @@ export function CollectionBrowser({ movements, works, tiles }: { movements: M[];
 
       {active && (
         <p className="rise mt-8 text-[1rem] text-ink-2">
-          <span className="display text-xl text-ink">{active.name}</span> · {active.span} · {shown.length} {shown.length === 1 ? "work" : "works"}
+          <span className="display text-lg text-ink">{active.name}</span> · {active.span} · {shown.length} {shown.length === 1 ? "work" : "works"}
         </p>
       )}
 
       {groups.map(([century, list]) => (
         <section key={century} className="pt-16">
-          <h2 className="display flex items-center gap-4 text-[2rem] sm:text-[2.5rem]">
+          <h2 className="display flex items-center gap-4 text-[1.7rem] sm:text-[2.1rem]">
             <span>
               The <em className="italic">{century}</em>
             </span>

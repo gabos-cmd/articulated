@@ -75,7 +75,7 @@ export function AccountView({ todayKey, total, movements }: Props) {
             <p className="hand text-[1.4rem] text-ochre">
               {hydrated && state.profile.since ? `reading since ${new Date(`${state.profile.since}T00:00:00Z`).toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric", timeZone: "UTC" })}` : "your account"}
             </p>
-            <h1 className="display mt-3 text-[3.4rem] leading-none sm:text-[5.5rem]">
+            <h1 className="display mt-3 text-[2.8rem] leading-[1.02] tracking-[-0.03em] sm:text-[4.4rem]">
               {hydrated && state.profile.name ? (
                 <>
                   Hello, <em className="italic">{state.profile.name}</em>
@@ -117,7 +117,7 @@ export function AccountView({ todayKey, total, movements }: Props) {
         {/* stats */}
         <section className="mt-4 grid gap-4 lg:grid-cols-[1.1fr_1fr]">
           <div className="rounded-[1.75rem] bg-white p-6 sm:p-8">
-            <p className="display text-[1.8rem] text-black">The last five weeks</p>
+            <p className="display text-[1.5rem] text-black">The last five weeks</p>
             <p className="mt-1 text-sm text-ink-3">Every square is a day; filled means you spent time with that day's work.</p>
             <div className="mt-6 grid max-w-sm grid-cols-7 gap-1.5">
               {cells.map((c) => (
@@ -136,7 +136,7 @@ export function AccountView({ todayKey, total, movements }: Props) {
           </div>
 
           <div className="rounded-[1.75rem] bg-white p-6 sm:p-8">
-            <p className="display text-[1.8rem] text-black">What you&rsquo;ve met</p>
+            <p className="display text-[1.5rem] text-black">What you&rsquo;ve met</p>
             <p className="mt-1 text-sm text-ink-3">
               {hydrated ? seen.size : "–"} of {total} works, by movement.
             </p>
@@ -177,7 +177,7 @@ export function AccountView({ todayKey, total, movements }: Props) {
         <section className="mt-4 rounded-[1.75rem] border border-black/[0.07] bg-white p-6 sm:p-8">
           <div className="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
             <div className="max-w-xl">
-              <p className="display text-[1.8rem] text-black">Your data</p>
+              <p className="display text-[1.5rem] text-black">Your data</p>
               <p className="mt-2 text-[0.9375rem] leading-relaxed text-ink-2">
                 Everything lives in this browser; there&rsquo;s no sign-in yet and nothing is sent anywhere. To move to another
                 device, download your journal here and import it there.
@@ -223,7 +223,7 @@ function Stat({ label, value }: { label: string; value: string | number }) {
   return (
     <div>
       <dt className="sr-only">{label}</dt>
-      <dd className="display text-[2.6rem] leading-none text-black">{value}</dd>
+      <dd className="display text-[2.15rem] leading-none text-black">{value}</dd>
       <p className="mt-1 text-[0.8125rem] text-ink-3">{label}</p>
     </div>
   );

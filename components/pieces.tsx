@@ -9,7 +9,7 @@ import { srcSet } from "@/lib/media";
 export function SectionHead({ title, note, accent = "var(--color-terracotta)" }: { title: ReactNode; note?: ReactNode; accent?: string }) {
   return (
     <div className="mb-8 flex flex-wrap items-end justify-between gap-x-6 gap-y-2 sm:mb-10">
-      <h2 className="display relative pb-3 text-[2.6rem] text-black sm:text-[3.6rem]">
+      <h2 className="display relative pb-3 text-[2.15rem] text-black sm:text-[2.9rem]">
         {title}
         <svg viewBox="0 0 120 10" preserveAspectRatio="none" className="absolute bottom-0 left-0 h-2.5 w-28" aria-hidden="true">
           <path d="M2 6 C 20 1, 34 9, 52 5 S 86 2, 118 5" fill="none" stroke={accent} strokeWidth="3" strokeLinecap="round" />
@@ -63,7 +63,7 @@ export function ArtTile({
       </div>
       <div className="mt-4 px-1">
         {kicker && <div className="hand text-lg leading-none text-ink-2">{kicker}</div>}
-        <h3 className="display mt-1.5 text-[1.4rem] leading-tight text-black group-hover:underline group-hover:decoration-1 group-hover:underline-offset-4">
+        <h3 className="display display-sm mt-1.5 text-[1.12rem] text-black group-hover:underline group-hover:decoration-1 group-hover:underline-offset-4">
           {artwork.title}
         </h3>
         <p className="mt-0.5 text-[0.8125rem] text-ink-3">
